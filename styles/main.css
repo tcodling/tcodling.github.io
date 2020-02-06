@@ -5,6 +5,7 @@ body {
     background-image: url('../media/images/wood-textures-2-1370212.jpg');
     background-size: cover;
     font-family: 'Itim', cursive;
+    text-align: center;
 }
 
 #blogList {
