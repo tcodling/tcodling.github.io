@@ -6,4 +6,6 @@ body {
 #blogList {
     list-style-type: none;
     padding-left: 0;
+    background-image: url('../media/images/leather-texture-1537859.jpg');
+    background-size: cover;
 }
