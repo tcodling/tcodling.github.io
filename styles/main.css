@@ -24,6 +24,10 @@ body {
     margin: 0;
 }
 
+#profilePic {
+    width: 300px;
+}
+
 #aboutMeSection {
     float: right;
     width: 47%;
