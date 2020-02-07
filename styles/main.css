@@ -82,3 +82,9 @@ body {
     position: relative;
     left: 200px;
 }
+
+.preformatted {
+    display: inline-block;
+    white-space: pre;
+    text-align: left;
+}
