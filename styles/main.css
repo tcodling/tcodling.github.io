@@ -58,6 +58,7 @@ body {
 
 .example {
     text-align: center;
+    margin: 10px;
 }
 
 #relativeExample {
