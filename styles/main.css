@@ -11,7 +11,6 @@ body {
 #mainContainer {
     width: 80%;
     margin: 0 auto;
-    text-align: left;
 }
 
 #blogList {
@@ -26,6 +25,7 @@ body {
 
 #profilePic {
     width: 300px;
+    margin: 0 auto;
 }
 
 #aboutMeSection {
@@ -33,6 +33,7 @@ body {
     width: 47%;
     padding: 10px;
     height: 400px;
+    text-align: center;
 }
 
 #blogList li {
