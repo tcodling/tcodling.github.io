@@ -42,6 +42,10 @@ body {
     margin: 4px;
 }
 
+#blogList li:hover {
+    border: 2px brown dashed;
+}
+
 .border-background {
     border: 2px brown solid;
     border-radius: 10px;
