@@ -19,9 +19,15 @@ body {
     padding-left: 0;
     background-color: bisque;
     background-size: cover;
-    display: inline-block;
     padding: 10px;
     border-radius: 5px;
+    width: 45%;
+    float: left;
+}
+
+#aboutMeSection {
+    float: right;
+    width: 45%;
 }
 
 #blogList li {
@@ -30,4 +36,8 @@ body {
     border-radius: 10px;
     padding: 5px;
     margin: 4px;
+}
+
+#clear {
+    clear: both;
 }
