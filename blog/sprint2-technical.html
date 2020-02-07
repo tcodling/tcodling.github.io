@@ -7,37 +7,39 @@
   </head>
   
   <body>
-    <div class='border-background'>
-      <h1>CSS Positioning</h1>
-      <h2>The difference between relative, absolute and fixed positioning</h2>
-    </div> 
-    <div class='border-background'>
-      <h3>8 February 2020</h3>
-      <div class='example'>
-        <h2>Position: Relative</h2>
-        <div id='relativeExample'>
-          <div id='relativeOriginal'></div>
-          <div id='relativePositioned'></div>
-        </div>
-        <h3>Code snippet</h3>
-        <p class='preformatted'>
-          #relativeOriginal {
-            border: 2px green dashed;
-            width: 100px;
-            height: 100px;
-            position: absolute;
-          }
-          
-          #relativePositioned {
-              border: 2px purple solid;
+    <div id='mainContainer'>
+      <div class='border-background'>
+        <h1>CSS Positioning</h1>
+        <h2>The difference between relative, absolute and fixed positioning</h2>
+      </div> 
+      <div class='border-background'>
+        <h3>8 February 2020</h3>
+        <div class='example border-background'>
+          <h2>Position: Relative</h2>
+          <div id='relativeExample'>
+            <div id='relativeOriginal'></div>
+            <div id='relativePositioned'></div>
+          </div>
+          <h3>Code snippet</h3>
+          <p class='preformatted'>
+            #relativeOriginal {
+              border: 2px green dashed;
               width: 100px;
               height: 100px;
-              position: relative;
-              left: 200px;
-          }
-        </p>
-      </div>
-    </div> 
+              position: absolute;
+            }
+            
+            #relativePositioned {
+                border: 2px purple solid;
+                width: 100px;
+                height: 100px;
+                position: relative;
+                left: 200px;
+            }
+          </p>
+        </div>
+      </div> 
+    </div>
     
     <!-- this is a comment. -->
   
