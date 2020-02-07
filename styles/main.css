@@ -11,6 +11,7 @@ body {
 #mainContainer {
     width: 80%;
     margin: 0 auto;
+    text-align: left;
 }
 
 #blogList {
@@ -28,4 +29,4 @@ body {
     border: 2px brown solid;
     border-radius: 10px;
     margin: 4px;
-} 
+}
