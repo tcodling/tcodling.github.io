@@ -28,5 +28,6 @@ body {
     font-size: 40px;
     border: 2px brown solid;
     border-radius: 10px;
+    padding: 5px;
     margin: 4px;
 }
