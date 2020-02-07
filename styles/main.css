@@ -61,6 +61,11 @@ body {
     margin: 10px;
 }
 
+.description {
+    width: 400px;
+    display: inline-block;
+}
+
 #relativeExample {
     width: 400px;
     height: 100px;
