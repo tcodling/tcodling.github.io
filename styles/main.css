@@ -28,6 +28,7 @@ body {
     float: right;
     width: 47%;
     padding: 10px;
+    height: 400px;
 }
 
 #blogList li {
