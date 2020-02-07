@@ -8,6 +8,11 @@ body {
     text-align: center;
 }
 
+#mainContainer {
+    width: 80%;
+    margin: 0 auto;
+}
+
 #blogList {
     list-style-type: none;
     padding-left: 0;
