@@ -88,4 +88,6 @@ body {
     display: inline-block;
     white-space: pre;
     text-align: left;
+    background-color: white;
+    border-radius: 10px;
 }
