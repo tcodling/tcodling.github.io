@@ -64,6 +64,7 @@ body {
 .description {
     width: 400px;
     display: inline-block;
+    position: relative;
 }
 
 .diagram {
@@ -86,6 +87,37 @@ body {
     height: 100px;
     position: relative;
     left: 200px;
+}
+
+#absoluteOriginal {
+    border: 2px green dashed;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+#absolutePositioned {
+    border: 2px purple solid;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+    left: 200px;
+}
+
+#fixedOriginal {
+    border: 2px green dashed;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+}
+
+#fixedPositioned {
+    border: 2px purple solid;
+    width: 100px;
+    height: 100px;
+    position: fixed;
+    left: 200px;
+    bottom: 300px;
 }
 
 .preformatted {
