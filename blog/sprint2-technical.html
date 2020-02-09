@@ -32,12 +32,12 @@
           </div>
           <h3>Code snippet</h3>
           <p class='preformatted'>
-  #relativeOriginal { 
-    border: 2px green dashed; 
-    width: 100px; 
-    height: 100px;  
-    position: absolute; 
-  } 
+  .originalPosition {
+    border: 2px green dashed;
+    width: 100px;
+    height: 100px;
+    position: absolute;
+ }
 
   #relativePositioned { 
       border: 2px purple solid; 
@@ -60,7 +60,20 @@
           </div>
           <h3>Code snippet</h3>
           <p class='preformatted'>
-Code snippet here
+  .originalPosition {
+    border: 2px green dashed; 
+    width: 100px;
+    height: 100px;
+    position: absolute;
+ }
+
+ #absolutePositioned {
+  border: 2px purple solid;
+  width: 100px;
+  height: 100px;
+  position: absolute;
+  left: 200px;
+ }
           </p>
         </div>
         <div class='example border-background'>
@@ -74,7 +87,21 @@ Code snippet here
           </div>
           <h3>Code snippet</h3>
           <p class='preformatted'>
-Code snippet here
+  .originalPosition {
+    border: 2px green dashed; 
+    width: 100px;
+    height: 100px;
+    position: absolute;
+ }
+
+ #fixedPositioned {
+  border: 2px purple solid;
+  width: 100px;
+  height: 100px;
+  position: fixed;
+  left: 200px;
+  bottom: 300px;
+ }
           </p>
         </div>
       </div>
