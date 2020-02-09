@@ -133,3 +133,10 @@ body {
     color: purple;
     font-weight: bold;
 }
+
+#homeButton {
+    padding: 5px;
+    margin: 5px;
+    position: relative;
+    top: 10px;
+}
