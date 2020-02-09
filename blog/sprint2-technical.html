@@ -51,8 +51,13 @@
         <div class='example border-background'>
           <h2>Position: absolute</h2>
           <p class='description'>
-            absolute description
-
+            An element with a position value of absolute will be treated as though it does not exist by other 
+            elements on the page. If you try to set left, top, right or bottom values, you will find it starts
+            moving in relationship to the edge of the screen. However, if the parent
+            container has a position property of relative, the absolute element will be placed in relation
+            to the relative container. In the diagram below, the absolute positioned box
+            has a left value of 0px and it has been placed right up against the edge of its container becuase 
+            we set it to relative!
           </p>
           <div class='diagram border-background'>
             <div class='roundCorner originalPosition'></div>
@@ -79,7 +84,9 @@
         <div class='example border-background'>
           <h2>Position: fixed</h2>
           <p class='description'>
-            fixed description
+            An element with a position value of fixed is similar to an absolute element however it is always
+            placed in relationship with the edge of the screen and even moves as you scroll! Thats why the circle has been
+            following you around the page!
           </p>
           <div class='diagram border-background'>
             <div class='circle originalPosition'></div>
