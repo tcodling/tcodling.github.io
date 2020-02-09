@@ -124,3 +124,13 @@ body {
 .roundCorner {
     border-radius: 25%;
 }
+
+.greenText {
+    color: green;
+    font-weight: bold;
+}
+
+.purpleText {
+    color: purple;
+    font-weight: bold;
+}
