@@ -72,6 +72,7 @@ body {
     height: 100px;
     padding: 10px;
     margin: 0 auto;
+    position: relative;
 }
 
 
@@ -88,7 +89,7 @@ body {
     width: 100px;
     height: 100px;
     position: relative;
-    left: 300px;
+    left: 200px;
 }
 
 #absolutePositioned {
@@ -96,7 +97,7 @@ body {
     width: 100px;
     height: 100px;
     position: absolute;
-    left: 300px;
+    left: 0px;
 }
 
 #fixedPositioned {
