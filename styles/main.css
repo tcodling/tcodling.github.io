@@ -84,6 +84,11 @@ a {
     position: relative;
 }
 
+.containerTitle {
+    margin-bottom: 0;
+    color: brown;
+}
+
 .diagram {
     width: 400px;
     height: 100px;
@@ -91,8 +96,6 @@ a {
     margin: 0 auto;
     position: relative;
 }
-
-
 
 .originalPosition {
     border: 2px green dashed;
