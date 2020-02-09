@@ -24,6 +24,17 @@ body {
     overflow-y: scroll;
 }
 
+#blogList::-webkit-scrollbar {
+    background-color: none;
+    border-radius: 10px;
+    width: 6px;
+}
+
+#blogList::-webkit-scrollbar-thumb {
+    background-color: brown;
+    border-radius: 10px;
+}
+
 #profilePic {
     width: 290px;
     margin: 0 auto;
