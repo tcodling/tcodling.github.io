@@ -20,6 +20,8 @@ body {
     width: 47%;
     float: left;
     margin: 0;
+    max-height: 400px;
+    overflow-y: scroll;
 }
 
 #profilePic {
