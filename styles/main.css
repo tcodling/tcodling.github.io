@@ -18,6 +18,11 @@ a {
     margin: 0 auto;
 }
 
+.blogContainer {
+    width: 60%;
+    margin: 0 auto;
+}
+
 .border-background {
     border: 2px brown solid;
     border-radius: 10px;
