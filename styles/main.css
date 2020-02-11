@@ -23,6 +23,10 @@ a {
     margin: 0 auto;
 }
 
+.pageContent {
+    padding: 10px;
+}
+
 .border-background {
     border: 2px brown solid;
     border-radius: 10px;
@@ -44,6 +48,11 @@ a {
     width: 400px;
     display: inline-block;
     position: relative;
+}
+
+ol, .blogContainer ul {
+    text-align: left;
+    display: inline-block;
 }
 
 /* BlogList styles  */ 
