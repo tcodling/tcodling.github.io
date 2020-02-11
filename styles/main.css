@@ -13,7 +13,7 @@ a {
     text-decoration: none;
 }
 
-#mainContainer {
+.mainContainer {
     width: 80%;
     margin: 0 auto;
 }
