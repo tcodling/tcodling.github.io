@@ -155,7 +155,7 @@ a {
     font-weight: bold;
 }
 
-#homeButton {
+.homeButton {
     padding: 5px;
     margin: 5px;
     position: relative;
