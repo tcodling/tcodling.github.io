@@ -18,6 +18,31 @@ a {
     margin: 0 auto;
 }
 
+.border-background {
+    border: 2px brown solid;
+    border-radius: 10px;
+    background-color: bisque;
+}
+
+#clear {
+    clear: both;
+}
+
+/* Blogpage styles  */ 
+
+.example {
+    text-align: center;
+    margin: 10px;
+}
+
+.description {
+    width: 400px;
+    display: inline-block;
+    position: relative;
+}
+
+/* BlogList styles  */ 
+
 #blogList {
     list-style-type: none;
     padding-left: 0;
@@ -27,6 +52,16 @@ a {
     margin: 0;
     max-height: 400px;
     overflow-y: scroll;
+}
+
+#blogList li {
+    font-size: 40px;
+    padding: 5px;
+    margin: 4px;
+}
+
+#blogList li:hover {
+    border: 2px brown dashed;
 }
 
 #blogList::-webkit-scrollbar {
@@ -39,6 +74,8 @@ a {
     background-color: brown;
     border-radius: 10px;
 }
+
+/* About me section styles  */ 
 
 #profilePic {
     width: 290px;
@@ -53,36 +90,7 @@ a {
     text-align: center;
 }
 
-#blogList li {
-    font-size: 40px;
-    padding: 5px;
-    margin: 4px;
-}
-
-#blogList li:hover {
-    border: 2px brown dashed;
-}
-
-.border-background {
-    border: 2px brown solid;
-    border-radius: 10px;
-    background-color: bisque;
-}
-
-#clear {
-    clear: both;
-}
-
-.example {
-    text-align: center;
-    margin: 10px;
-}
-
-.description {
-    width: 400px;
-    display: inline-block;
-    position: relative;
-}
+/* Diagram Sprint2 tech  */ 
 
 .containerTitle {
     margin-bottom: 0;
@@ -129,20 +137,22 @@ a {
     bottom: 300px;
 }
 
-.preformatted {
-    display: inline-block;
-    white-space: pre;
-    text-align: left;
-    background-color: white;
-    border-radius: 10px;
-}
-
 .circle {
     border-radius: 50%;
 }
 
 .roundCorner {
     border-radius: 25%;
+}
+
+/* Code snippet styles  */ 
+
+.preformatted {
+    display: inline-block;
+    white-space: pre;
+    text-align: left;
+    background-color: white;
+    border-radius: 10px;
 }
 
 .greenText {
