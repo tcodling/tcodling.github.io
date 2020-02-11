@@ -185,3 +185,7 @@ ol, .blogContainer ul {
     position: relative;
     top: 10px;
 }
+
+.externalLink {
+    color: red;
+}
