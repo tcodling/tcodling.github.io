@@ -195,3 +195,7 @@ ol, .blogContainer ul {
 .externalLink {
     color: red;
 }
+
+.externalLink:hover {
+    text-decoration: underline;
+}
