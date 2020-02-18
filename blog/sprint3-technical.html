@@ -14,8 +14,72 @@
         <h1>JavaScript and how it interacts with HTML and CSS</h1>
         <h2>What is JavaScript? How can I use it to make a webpage interactive?</h2>
       </div> 
-      <div class='border-background'>
+      <div class='border-background pageContent'>
         <h3>18 February 2020</h3>
+        <h2>HTML and CSS</h2>
+        <p>As I have mentioned previously, HTML is the content of the page and CSS is the way that that content is styled. While both of these are extremely powerful and combined they allow for almost infinite possibilities for the presentation of your website, they do not allow for any interactivity in your website. This is where JavaScript and the DOM comes in.</p>
+        <h2>Functions</h2>
+        <p>Functions are essentially blocks of code that can be reused multiple times throughout a program. Functions can take inputs and also produce values, although this is optional. A function can run and perform operations on your program both with or without inputs and outputs.</p>
+        <p>Below is an example of a function that takes two numbers an input and returns the sum of the numbers</p>
+        <p class='preformatted'>
+  function sumOfTwoNumbers(a, b) {  
+    return a + b
+  }          
+        </p>
+        <p>Here if you input sumOfTwoNumber(3, 7), you would get 10 as the output</p>
+        <p>Below is an example of a function that prints “Hello!” to the console. As you can see it still has an effect even without inputs or outputs!</p>
+        <p class='preformatted'>
+  function sayHello() {
+    console.log(“Hello!”)
+  }
+        </p>
+        <h2>Loops</h2>
+        <p>Often you might want to run a piece of code a certain number of times or until a certain condition is met. You could just re-type the code a lot of times, however this can very easily lead to errors and is much harder to edit at a later time. This is when loops come in handy. In javascript we use two main types of loop, the for loop and the while loop.</p>
+        <h3>For loop example:</h3>
+        <p class='preformatted'>
+  for (let i=0; i&lt;5; i++) {  
+    console.log(i)  
+  } 
+        </p>
+        <h3>While loop example:</h3>
+        <p class='preformatted'>
+  let i = 0 
+  while (i &lt; 5) {  
+    console.log(i)  
+    i++ 
+  } 
+        </p>
+        <p>Loops are something that are demonstrated in our daily life. I use a for loop type process when I am working out. I like doing a circuit training workout using a kettlebell where I do a set of exercises 3 times. This can be represented using a for loop as follows. </p>
+        <p class='preformatted'>
+  for (let circuitCount = 1; circuitCount &lt;= 3; circuitCount++) {  
+    console.log(“8 Halos”)
+    console.log(“10 Goblet Squats”)
+    console.log(“8 Overhead Press”)
+    console.log(“15 Sweings”)
+    console.log(“8 Bent Rows”)
+    console.log(“6 Reverse Lunges”)
+  } 
+        </p>
+        <p>As you can see the whole workout is repeated three times thanks to the for loop. The circuit count increases by one at the end of each loop until the circuit count reaches 3 which is the end of the workout!</p>
+        <h2>Arrays and Objects</h2>
+        <p>Arrays are essentially lists of variables presented in this format wrapped in square braces: </p>
+        <p class='preformatted'> let shoppingList = [“Cheese”, “Milk”, “Bread”] </p>
+        <p>Objects are similar to arrays in that they store lists of values, however they contain key: value pairs and are wrapped in curly braces. They are presented in this format:</p>
+        <p class='preformatted'>
+  let person = {
+    name: “John Doe”,
+    age: 22,
+    occupation: “Teacher”,
+    sayGreeting() {
+      console.log(“Morning class!”) 
+    }
+  }          
+        </p>
+        <p>You may have noticed that we have something that looks like a function in our object. This is called a method. What makes objects so incredible and versatile is that you can add so many different types of data to the object.</p>
+        <p>If you wanted to access the object name value you would use: <span class='preformatted'>person.name</span></p>
+        <p>If you wanted to call the sayGreeting method you could simply call: <span class='preformatted'>person.sayGreeting()</span></p>
+        <h2>The DOM</h2>
+        <p>The DOM is essentially a representation of the HTML and CSS styles in the form of a JSON (JavaScript-Object-Notation) object. It is because the DOM is structured like this that you can interact with it. The DOM contains all of the HTML elements with their accompanying styles, however it also contains a large amount of methods that allow you to interact with it and alter the content inside. This opens up all sorts of new possibilities for interactivity that doesn’t require constant reloading of the page or navigation around the website.</p>
       </div>
       <a class='homeButton border-background' href='../index.html'>Back to home</a>
     </div>
