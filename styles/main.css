@@ -2,7 +2,9 @@
 
 
 body {
-    background-image: url('../media/images/07_wood\ grain\ PBR\ texture.jpg');
+    background-image: url('../media/images/wood-textures-2-1370212.jpg');
+    background-size: 100% auto;
+    background-repeat: repeat-y;
     font-family: 'Itim', cursive;
     text-align: center;
 }
