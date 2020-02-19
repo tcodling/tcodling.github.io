@@ -20,7 +20,7 @@
         <p>As I have mentioned previously, HTML is the content of the page and CSS is the way that that content is styled. While both of these are extremely powerful and combined they allow for almost infinite possibilities for the presentation of your website, they do not allow for any interactivity in your website other than refreshing and navigating between pages. This is where JavaScript and the DOM comes in.</p>
         <h2>Functions</h2>
         <p>Functions are essentially blocks of code that can be reused multiple times throughout a program. Functions can take inputs and also produce values, although this is optional. A function can run and perform operations on your program both with or without inputs and outputs.</p>
-        <p>Below is an example of a function that takes two numbers an input and returns the sum of the numbers. These numbers are inputted as parameters a and b and the output is a + b as evaluated in the return statement.</p>
+        <p>Below is an example of a function that takes two numbers as an input and returns the sum of the numbers. These numbers are inputted as parameters a and b and the output is a + b as evaluated in the return statement.</p>
         <p class='preformatted'>
   function sumOfTwoNumbers(a, b) {  
     return a + b
@@ -78,10 +78,9 @@
     }
   }          
         </p>
-        <p>You may have noticed that we have something that looks like a function in our object. This is called a method and when it is called it acts just the same as a function when called. What makes objects so incredible and versatile is that you can add so many different types of data to the object.</p>
+        <p>You may have noticed that we have something that looks like a function in our object. This is called a method and when it is called it acts just the same as a function when called. What makes objects so incredible and versatile is that you can add so many different types of data to an object.</p>
         <p>If you wanted to access the object name value you would use: <span class='preformatted'> person.name </span></p>
         <p>If you wanted to call the sayGreeting method you could simply call: <span class='preformatted'> person.sayGreeting() </span></p>
-        <!-- TODO: Add section on control flow -->
         <h2>Control Flow</h2>
         <p>Control flow is the order that the computer processes your program in JavaScript. In general,
           JavaScript reads programs from the first line to the last line but there are many statements it
@@ -94,7 +93,12 @@
           functions block of code and processes it accordingly!
         </p>
         <h2>The DOM</h2>
-        <p>The DOM is essentially a representation of the HTML and CSS styles in the form of a JSON (JavaScript-Object-Notation) object. It is because the DOM is structured like this that you can interact with it. The DOM contains all of the HTML elements with their accompanying styles, however it also contains a large amount of methods that allow you to interact with it and alter the content inside. This opens up all sorts of new possibilities for interactivity that doesn’t require constant reloading of the page or navigation around the website.</p>
+        <p>The DOM is essentially a representation of the HTML and CSS styles in the form of a JavaScript object. It is because the DOM is structured like this that you can interact with it. The DOM contains all of the HTML elements with their accompanying styles, however it also contains a large amount of methods that allow you to interact with it and alter the content inside. This opens up all sorts of new possibilities for interactivity that doesn’t require constant reloading of the page or navigation around the website.</p>
+        <p>You can access the DOM using dot notation like you would any other JavaScript object. If you wanted
+          to store an html element in a variable you can use one of the built in methods like this:
+          <span class='preformatted'> let exampleElement = document.getElementById('exampleId') </span> You can then use dot notation
+          to manipulate its attributes like this: <span class='preformatted'> exampleElement.backgroundColor = 'blue' </span>, <span class='preformatted'> exampleElement.height = '400px' </span> and so on
+        </p>
       </div>
       <a class='homeButton border-background' href='../index.html'>Back to home</a>
     </div>
