@@ -76,7 +76,7 @@ ol, .blogContainer ul {
     margin: 4px;
 }
 
-#blogList li:hover, .homeButton:hover {
+#blogList li:hover, .button:hover {
     border: 2px brown dashed;
 }
 
@@ -181,10 +181,10 @@ ol, .blogContainer ul {
     font-weight: bold;
 }
 
-.homeButton {
+.button {
+    display: inline-block;
     padding: 5px;
-    position: relative;
-    top: 10px;
+    margin: 2px;
 }
 
 .externalLink {
