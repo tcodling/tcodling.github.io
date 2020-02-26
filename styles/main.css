@@ -96,13 +96,6 @@ ol, .blogContainer ul {
 #profilePic {
     width: 290px;
     margin: 0 auto;
-    -webkit-transition: -webkit-transform .8s ease-in-out;
-            transition:         transform .8s ease-in-out;
-}
-
-#profilePic:hover {
-    -webkit-transform: rotate(360deg);
-            transform: rotate(360deg);
 }
 
 #aboutMeSection {
