@@ -14,7 +14,107 @@
               <h1>My approach to problem solving</h1>
             </div> 
             <div class='border-background pageContent'>
-              
+              <h2 class='border-background'>Getting stuck on simple problems</h2>
+                <p>
+                  There are so many things going on when you are programming it is inevitable that 
+                  you will get stumped on some pretty simple and easily resolved problems. Thats why it
+                  is important when you are stuck to make sure you regularly take a step back and try some problem solving
+                  techniques to figure out what went wrong.
+                </p>
+                <p>
+                  A great example of this was when I was first working on this blog. I made the super simple 
+                  mistake of working on my local version of the website while trying to check my changes 
+                  on the live version. This obviously didn't work and I am embarrassed to admit the amount of 
+                  time I lost trying to figure out why the changes I was making to my code weren't displaying. 
+                  When I finally googled why my browser wasn't updating, the first stack overflow answer basically 
+                  told me that it was probably my fault and I was modifying the wrong file. While not exactly what was 
+                  happening, it encouraged me to actually look at how I setup my workspace and quickly realised 
+                  my mistake. After this experience I have definitely been much more careful in my setup and I also 
+                  now seek the opinions of others much sooner in order to get a fresh take on the situation
+                </p>
+              <h2 class='border-background'>Solving a problem in an elegant way</h2>
+                <p>
+                  One of the most satisfying parts of this sprint for me was in the JS-olympics kata. 
+                  For the unjumble function, I jumped into coding it without planning and ended up with a terrible 
+                  initial approach.  
+                  I was trying to loop through an array of the letters and ended up with a huge mash
+                  of ugly code that didn't even work. For some reason I was thinking I had to use a loop.
+                  I thought the best thing to do was take a step back and actually write down the steps 
+                  that I was trying to achieve in some psuedocode. When doing this, I realised that
+                  most of what I was trying to achieve were actually all built in methods. I then googled
+                  the methods and found the 3 that I needed and passed the test on my first try with this 
+                  beautiful single line function:
+                </p>
+                <p class='preformatted'>
+  const unjumble = (string) => {
+    return string.split('').reverse().join('')  
+  }
+                </p>
+              <h3 class='border-background'>Here are some great problem solving techniques I have been using over the past few weeks</h3>
+              <div>
+                <h3>Googling</h3>
+                <p>
+                  The internet is an incredible resource for programmers. If you know exactly how to phrase your 
+                  problem in a way that google likes, you can find the solution to pretty much every problem you 
+                  come across (or something extremely similar). There are incredible forums online where people
+                  share their questions and snippets of code. Often solving your problem is as simple as 
+                  asking google a question and then copying the first snippet of code you see.
+                </p>
+                <h3>Console.logging</h3>
+                <p>
+                  <span class='preformatted'> Console.log </span> is my best friend when I am coding javascript. Console.log gives 
+                  you a window into your code and allows you to keep track of your variables and 
+                  functions as your code runs. When I come across an error due to a variable being 
+                  incorrect or a function generating a wrong output, console.log is my first port of call.
+                </p>
+                <h3>Reading Error Messages</h3>
+                <p>
+                  Javascript seems to be particularly ruthless with the error messages it gives you. 
+                  Sometimes they can be super helpful and sometimes they can be downright useless. 
+                  You can extract some helpful information from these however that will at least 
+                  bring you closer to finding out the problem.
+                </p>
+                <p>
+                  Error messages seem scary when you first see them, but they can easily be broken 
+                  down. Here is the basic structure of an error message:
+                </p>
+                <!--STRANGE FORMATTING TO PRESERVE WHITESPACE-->
+                <p class='preformatted'>
+  Error: please improve your code
+    at locationOfError:line:column
+    at nextLocationOfError:line:column  
+    ...
+                </p>
+                
+                <p>
+                  The amount that this statement will help varies greatly from error to error, but you 
+                  can usually get some pretty helpful information regarding the locations of the error 
+                  and the type that you should be looking out for
+                </p>
+                <h3>Psuedocode</h3>
+                <p>
+                  When you try to write a function that performs a task. It can be easier to keep on 
+                  track of what you are doing if you write out the steps of the function in simple 
+                  english first before diving into writing out code. Writing out the steps gives you 
+                  time to think about what the code should actually do before you start. It also makes 
+                  it easier to work through when you have all of the steps and functionality laid out 
+                  just above where you are writing your code.
+                </p>
+                <p>
+                  Psuedocode is something I have been trying to integrate more into my programming habits 
+                  I have a tendency to dive into writing code however I have found actually writing out the 
+                  steps in plain english has helped me so much in forming an approach for my block of code.
+                </p>
+                <h3>Asking your peers for help</h3>
+                <p>
+                  In my experience, one of the best debuggers is a fresh set of eyes. I am lucky enough to 
+                  have a flatmate who has some experience in these languages so I can show my code to him 
+                  if I want input from someone with a different perspective. Everyone has a different approach to
+                  every problem and different levels of knowledge in different areas.
+                  Having someone else look at your problem from their perspective allows them to add suggestions or
+                  point out errors that you would have never even considered while writing your code.
+                </p>
+              </div>
             </div>
             <a class='homeButton border-background' href='../index.html'>Back to home</a>
         </div>
