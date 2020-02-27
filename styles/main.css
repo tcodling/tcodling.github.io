@@ -45,16 +45,6 @@ a {
 
 /* Blogpage styles  */ 
 
-.example {
-    text-align: center;
-    margin: 10px;
-}
-
-.description {
-    width: 400px;
-    display: inline-block;
-    position: relative;
-}
 
 ol, .blogContainer ul {
     text-align: left;
