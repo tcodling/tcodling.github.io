@@ -74,6 +74,8 @@ ol, .blogContainer ul {
     border: 2px brown dashed;
 }
 
+/* Scrollbar styles */
+
 #blogList::-webkit-scrollbar {
     background-color: none;
     border-radius: 10px;
@@ -100,60 +102,6 @@ ol, .blogContainer ul {
     text-align: center;
 }
 
-/* Diagram Sprint2 tech  */ 
-
-.containerTitle {
-    margin-bottom: 0;
-    color: brown;
-}
-
-.diagram {
-    width: 400px;
-    height: 100px;
-    padding: 10px;
-    margin: 0 auto;
-    position: relative;
-}
-
-.originalPosition {
-    border: 2px green dashed;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-}
-
-#relativePositioned {
-    border: 2px purple solid;
-    width: 100px;
-    height: 100px;
-    position: relative;
-    left: 200px;
-}
-
-#absolutePositioned {
-    border: 2px purple solid;
-    width: 100px;
-    height: 100px;
-    position: absolute;
-    left: 0px;
-}
-
-#fixedPositioned {
-    border: 2px purple solid;
-    width: 100px;
-    height: 100px;
-    position: fixed;
-    left: 950px;
-    bottom: 150px;
-}
-
-.circle {
-    border-radius: 50%;
-}
-
-.roundCorner {
-    border-radius: 25%;
-}
 
 /* Code snippet styles  */ 
 
