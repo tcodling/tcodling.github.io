@@ -3,7 +3,7 @@
 /* SWEEPING CHANGES */
 
 body {
-    background-color: black;
+    background-color: rgb(66, 27, 27);
     margin: 0;
     font-family: 'Rubik', sans-serif;
 }
@@ -16,6 +16,10 @@ ul {
 h1, h2 {
     font-family: 'Bungee Shade', cursive;
     margin: -10px 0px;
+}
+
+h2 {
+    font-size: 30px;
 }
 
 
@@ -37,9 +41,9 @@ h1, h2 {
 
 .mainHeading {
     font-family: 'Bungee Shade', cursive;
-    font-size: 50px;
+    font-size: 60px;
     color: black;
-    background-color: yellow;
+    background-color: rgb(247, 166, 134);
     margin: 0;
     padding-left: 20px;
     border-bottom: 2px black solid;
@@ -58,7 +62,7 @@ h1, h2 {
 
 #about p {
     border: 2px black solid;
-    background-color: yellow;
+    background-color: rgb(247, 166, 134);
     border-radius: 5px;
     padding: 10px;
 }
@@ -66,7 +70,7 @@ h1, h2 {
 /* SKILLS */
 
 #skills ul {
-    background-color: yellow;
+    background-color: rgb(247, 166, 134);
     border-radius: 10px;
     padding: 10px;
     border: 2px black solid;
@@ -83,7 +87,6 @@ h1, h2 {
 /* PROJECTS */
 
 #projects {
-    /* background-color: orangered; */
     width: 30%;
 
 }
@@ -103,7 +106,7 @@ h1, h2 {
     margin: 5px;
     padding: 10px;
     border-radius: 10px;
-    background-color: yellow;
+    background-color: rgb(247, 166, 134);
     height: 40%;
     width: 40%;
 }
@@ -130,7 +133,7 @@ h1, h2 {
     margin: 5px;
     padding: 5px;
     border-radius: 10px;
-    background-color: yellow;
+    background-color: rgb(247, 166, 134);
     text-align: center;
 }
 
