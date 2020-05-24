@@ -61,19 +61,22 @@ h2 {
 }
 
 #about p {
-    border: 2px black solid;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
     background-color: rgb(247, 166, 134);
-    border-radius: 5px;
     padding: 10px;
+    margin: 0 -20px;
 }
 
 /* SKILLS */
 
 #skills ul {
     background-color: rgb(247, 166, 134);
-    border-radius: 10px;
+    /* border-radius: 10px; */
+    margin: 0 -20px;
     padding: 10px;
-    border: 2px black solid;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -82,6 +85,7 @@ h2 {
 
 #skills li {
     font-weight: bold;
+    font-size: 25px;
 }
 
 /* PROJECTS */
@@ -97,22 +101,21 @@ h2 {
     justify-content: center;
     align-items: center;
     align-content: center;
-    margin: auto;
-    height: 85%;
+    /* overflow-y: scroll; */
 }
 
 #projects li {
     border: 2px black solid;
     margin: 5px;
     padding: 10px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: rgb(247, 166, 134);
     height: 40%;
     width: 40%;
 }
 
 #projects li:hover {
-    background-color: rgb(250, 250, 98);
+    background-color: rgb(236, 105, 53);
     cursor: pointer;
 }
 
@@ -132,7 +135,7 @@ h2 {
     border: 2px black solid;
     margin: 5px;
     padding: 5px;
-    border-radius: 10px;
+    border-radius: 5px;
     background-color: rgb(247, 166, 134);
     text-align: center;
 }
@@ -144,4 +147,5 @@ input, textarea {
     margin: 5px;
     width: 95%;
     font-family: 'Rubik', sans-serif;
+    background-color: bisque;
 }
