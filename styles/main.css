@@ -60,8 +60,12 @@ h1, h2 {
 #skills ul {
     background-color: yellow;
     border-radius: 10px;
-    padding: 5px;
+    padding: 10px;
     border: 2px black solid;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 80%;
 }
 
 #projects {
