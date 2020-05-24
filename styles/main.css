@@ -54,7 +54,7 @@ h1, h2 {
     border: 2px black solid;
     background-color: yellow;
     border-radius: 5px;
-    padding: 5px;
+    padding: 10px;
 }
 
 #skills ul {
@@ -68,6 +68,10 @@ h1, h2 {
     height: 80%;
 }
 
+#skills li {
+    font-weight: bold;
+}
+
 #projects {
     /* background-color: orangered; */
     width: 30%;
@@ -78,6 +82,8 @@ h1, h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    align-items: center;
+    margin: auto;
 }
 
 #projects li {
@@ -88,14 +94,33 @@ h1, h2 {
     background-color: yellow;
 }
 
-#projects h5 {
+#projects li:hover {
+    background-color: rgb(250, 250, 98);
+    cursor: pointer;
+}
+
+#projects h3 {
     text-align: center;
 }
 
 #projects img {
     width: 150px;
+    border-radius: 10px;
+    border: 2px black solid;
 }
 
 #contact {
     /* background-color: red; */
+}
+
+#contact form {
+    border: 2px black solid;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: yellow;
+}
+
+input, textarea {
+    border: 2px black solid;
 }
