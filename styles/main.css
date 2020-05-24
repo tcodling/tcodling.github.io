@@ -7,6 +7,11 @@ body {
     font-family: 'Rubik', sans-serif;
 }
 
+ul {
+    padding: 0;
+    list-style-type: none;
+}
+
 h1, h2 {
     font-family: 'Bungee Shade', cursive;
     margin: -10px 0px;
@@ -19,6 +24,7 @@ h1, h2 {
     background-color: yellow;
     margin: 0;
     padding-left: 20px;
+    border-bottom: 2px black solid;
 }
 
 #mainContainer {
@@ -28,7 +34,7 @@ h1, h2 {
 }
 
 #mainContainer div {
-    /* border: 2px black solid; */
+    border: 2px black solid;
     background-color: bisque;
     border-radius: 10px;
     margin: 10px;
@@ -41,21 +47,49 @@ h1, h2 {
 }
 
 #about img {
-    width: 400px;
+    width: 100%;
+}
+
+#about p {
+    border: 2px black solid;
+    background-color: yellow;
+    border-radius: 5px;
+    padding: 5px;
+}
+
+#skills ul {
+    background-color: yellow;
+    border-radius: 10px;
+    padding: 5px;
+    border: 2px black solid;
 }
 
 #projects {
     /* background-color: orangered; */
     width: 30%;
+
+}
+
+#projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+#projects li {
+    border: 2px black solid;
+    margin: 5px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: yellow;
+}
+
+#projects h5 {
+    text-align: center;
 }
 
 #projects img {
     width: 150px;
-}
-
-ul {
-    padding: 0;
-    list-style-type: none;
 }
 
 #contact {
