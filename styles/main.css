@@ -62,7 +62,7 @@ h2 {
 }
 
 #about img {
-    width: 100%;
+    width: 30vw;
 }
 
 #about p {
@@ -136,7 +136,30 @@ h2 {
 
 /* FORM */
 
-#contact form {
+#contact a {
+    font-weight: bold;
+}
+
+#contact a:hover {
+    color: rgb(236, 105, 53);
+}
+
+#contact ul {
+    display: flex;
+    justify-content: center;
+    background-color: rgb(247, 166, 134);
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+}
+
+#contact a {
+    margin: 0 30px;
+    font-size: 3vh;
+    font-family: 'Bungee Shade', cursive;
+}
+
+
+/* #contact form {
     border-top: 2px black solid;
     border-bottom: 2px black solid;
     margin: 5px -20px;
@@ -153,4 +176,4 @@ input, textarea {
     width: 95%;
     font-family: 'Rubik', sans-serif;
     background-color: bisque;
-}
+} */
