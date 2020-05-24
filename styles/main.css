@@ -2,7 +2,7 @@
 
 
 body {
-    background-color: rgb(95, 9, 95);
+    background-color: black;
     margin: 0;
     font-family: 'Rubik', sans-serif;
 }
@@ -35,7 +35,7 @@ h1, h2 {
 
 #mainContainer div {
     border: 2px black solid;
-    background-color: rgb(212, 132, 188);
+    background-color: bisque;
     border-radius: 10px;
     margin: 10px;
     padding: 20px;
@@ -65,7 +65,7 @@ h1, h2 {
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    height: 80%;
+    height: 85%;
 }
 
 #skills li {
@@ -83,7 +83,9 @@ h1, h2 {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    align-content: center;
     margin: auto;
+    height: 85%;
 }
 
 #projects li {
@@ -92,6 +94,8 @@ h1, h2 {
     padding: 5px;
     border-radius: 10px;
     background-color: yellow;
+    height: 40%;
+    width: 40%;
 }
 
 #projects li:hover {
@@ -104,7 +108,7 @@ h1, h2 {
 }
 
 #projects img {
-    width: 150px;
+    width: 98%;
     border-radius: 10px;
     border: 2px black solid;
 }
