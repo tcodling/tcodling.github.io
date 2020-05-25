@@ -32,9 +32,11 @@ h2 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    width: 100%;
+    margin: 0 auto;
 }
 
-#mainContainer div {
+#mainContainer div, #skills {
     border: 2px black solid;
     background-color: bisque;
     border-radius: 10px;
@@ -75,22 +77,33 @@ h2 {
 
 /* SKILLS */
 
+#skills {
+    /* width: 80%; */
+    margin: 0 auto;
+    border-radius: 0;
+    border: 0;
+    border-bottom: 2px black solid;
+    width: 25%;
+}
+
 #skills ul {
     background-color: rgb(247, 166, 134);
     /* border-radius: 10px; */
+    flex-wrap: wrap;
     margin: 0 -20px;
     padding: 10px;
     border-top: 2px black solid;
     border-bottom: 2px black solid;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: space-around;
     height: 85%;
 }
 
 #skills li {
     font-weight: bold;
     font-size: 25px;
+    margin: 10px;
 }
 
 /* PROJECTS */
@@ -154,7 +167,7 @@ h2 {
 }
 
 #contact a {
-    margin: 0 30px;
+    margin: -10px 30px;
     font-size: 3vh;
     font-family: 'Bungee Shade', cursive;
 }
