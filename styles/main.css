@@ -177,6 +177,7 @@ h2 {
     display: flex;
     justify-content: center;
     background-color: rgb(247, 166, 134);
+    margin: 0;
     border-top: 2px black solid;
     border-bottom: 2px black solid;
 }
