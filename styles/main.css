@@ -18,7 +18,7 @@ ul {
     list-style-type: none;
 }
 
-h1, h2, h3 {
+h1, h2 {
     font-family: 'Bungee Shade', cursive;
     margin: -10px 0px;
 }
@@ -149,7 +149,7 @@ h2 {
 }
 
 #projects a:hover {
-    background-color: rgb(236, 105, 53);
+    border: 2px black dashed;
     cursor: pointer;
 }
 
@@ -170,7 +170,7 @@ h2 {
 }
 
 #contact a:hover {
-    color: rgb(236, 105, 53);
+    color: bisque;
 }
 
 #contact ul {
