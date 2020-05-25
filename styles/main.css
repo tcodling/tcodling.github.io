@@ -186,3 +186,22 @@ h2 {
     font-size: 3vh;
     font-family: 'Bungee Shade', cursive;
 }
+
+@media only screen and (max-width: 600px) {
+    #mainContainer {
+        flex-direction: column;
+        align-content: center;
+    }
+
+    #mainContainer div, #skills {
+        width: 80%;
+    }
+
+    #contact ul {
+        flex-direction: column;
+    }
+
+    #contact a {
+        font-size: 4vw;
+    }
+  }
