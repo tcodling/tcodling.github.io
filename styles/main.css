@@ -158,6 +158,7 @@ h2 {
 }
 
 #projects img {
+    border: 2px black solid;
     width: 98%;
     border-radius: 5px;
 }
