@@ -210,3 +210,25 @@ h2 {
         display: none;
     }
   }
+
+
+/* ToolTip */
+
+[data-tooltip]:hover::after {
+    content: attr(data-tooltip)
+}
+
+/* [data-tooltip] {
+    display: relative;
+}
+
+li[data-tooltip]:hover::after {
+    content: attr(data-tooltip);
+    position: absolute;
+    right: 150px;
+    display: inline-block;
+    background-color: bisque;
+    border-radius: 10px;
+    padding: 10px;
+    border: 2px black solid;
+} */
