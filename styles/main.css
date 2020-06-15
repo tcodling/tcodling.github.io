@@ -215,7 +215,7 @@ h2 {
 /* ToolTip */
 
 [data-tooltip]:hover::after {
-    content: attr(data-tooltip)
+    content: attr(data-tooltip);
 }
 
 /* [data-tooltip] {
