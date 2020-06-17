@@ -27,6 +27,11 @@ h2 {
     font-size: 30px;
 }
 
+iframe {
+    border-radius: 10px;
+    border: 2px black solid;
+}
+
 
 #mainContainer {
     display: flex;
