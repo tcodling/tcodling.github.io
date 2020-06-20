@@ -219,9 +219,9 @@ iframe {
 
 /* ToolTip */
 
-[data-tooltip]:hover::after {
+/* [data-tooltip]:hover::after {
     content: attr(data-tooltip);
-}
+} */
 
 /* [data-tooltip] {
     display: relative;
