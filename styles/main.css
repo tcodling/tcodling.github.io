@@ -193,7 +193,7 @@ iframe {
   font-family: "Bungee Shade", cursive;
 }
 
-@media only screen and (max-width: 1000px) {
+@media only screen and (max-width: 800px) {
   #mainContainer {
     flex-direction: column;
     align-content: center;
