@@ -1,239 +1,218 @@
-@import url('https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Rubik&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Rubik&display=swap");
 
 /* SWEEPING CHANGES */
 
 body {
-    background-color: rgb(66, 27, 27);
-    margin: 0;
-    font-family: 'Rubik', sans-serif;
+  background-color: rgb(66, 27, 27);
+  margin: 0;
+  font-family: "Rubik", sans-serif;
 }
 
 a {
-    text-decoration: none;
-    color: black;
+  text-decoration: none;
+  color: black;
 }
 
 ul {
-    padding: 0;
-    list-style-type: none;
+  padding: 0;
+  list-style-type: none;
 }
 
-h1, h2 {
-    font-family: 'Bungee Shade', cursive;
-    margin: -10px 0px;
+h1,
+h2 {
+  font-family: "Bungee Shade", cursive;
+  margin: -10px 0px;
 }
 
 h2 {
-    font-size: 30px;
+  font-size: 30px;
 }
 
 iframe {
-    border-radius: 10px;
-    border: 2px black solid;
+  border-radius: 10px;
+  border: 2px black solid;
 }
-
 
 #mainContainer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    width: 100%;
-    margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  width: 100%;
+  margin: 0 auto;
 }
 
-#mainContainer div, #skills {
-    border: 2px black solid;
-    background-color: bisque;
-    border-radius: 10px;
-    margin: 10px;
-    padding: 20px;
+#mainContainer div,
+#skills {
+  border: 2px black solid;
+  background-color: bisque;
+  border-radius: 10px;
+  margin: 10px;
+  padding: 20px;
 }
 
 /* HEADER */
 
 .mainHeading {
-    font-family: 'Bungee Shade', cursive;
-    font-size: 60px;
-    color: black;
-    background-color: rgb(247, 166, 134);
-    margin: 0;
-    padding-left: 20px;
-    border-bottom: 2px black solid;
+  font-family: "Bungee Shade", cursive;
+  font-size: 60px;
+  color: black;
+  background-color: rgb(247, 166, 134);
+  margin: 0;
+  padding-left: 20px;
+  border-bottom: 2px black solid;
 }
 
 /* ABOUT */
 
 #about {
-    /* background-color: orange; */
-    width: 30%;
+  /* background-color: orange; */
+  width: 30%;
 }
 
 #about img {
-    width: 30vw;
+  width: 30vw;
 }
 
 #about p {
-    border-top: 2px black solid;
-    border-bottom: 2px black solid;
-    background-color: rgb(247, 166, 134);
-    padding: 10px;
-    margin: 0 -20px;
+  border-top: 2px black solid;
+  border-bottom: 2px black solid;
+  background-color: rgb(247, 166, 134);
+  padding: 10px;
+  margin: 0 -20px;
 }
 
 /* SKILLS */
 
 #skills {
-    /* width: 80%; */
-    margin: 0 auto;
-    border-radius: 0;
-    border: 0;
-    border-bottom: 2px black solid;
-    width: 25%;
+  /* width: 80%; */
+  margin: 0 auto;
+  border-radius: 0;
+  border: 0;
+  border-bottom: 2px black solid;
+  width: 25%;
 }
 
 #skills ul {
-    background-color: rgb(247, 166, 134);
-    /* border-radius: 10px; */
-    flex-wrap: wrap;
-    margin: 0 -20px;
-    padding: 10px;
-    border-top: 2px black solid;
-    border-bottom: 2px black solid;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    height: 85%;
+  background-color: rgb(247, 166, 134);
+  /* border-radius: 10px; */
+  flex-wrap: wrap;
+  margin: 0 -20px;
+  padding: 10px;
+  border-top: 2px black solid;
+  border-bottom: 2px black solid;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  height: 85%;
 }
 
 #skills li {
-    font-weight: bold;
-    font-size: 90%;
-    margin: 10px;
-    text-align: center;
-    
+  font-weight: bold;
+  font-size: 90%;
+  margin: 10px;
+  text-align: center;
 }
 
 #skills img {
-    display: block;
-    background-color: bisque;
-    border-radius: 20%;
-    width: 4vw;
-    height: 4vw;
-    padding: 10px;
-    margin: 0 auto;
+  display: block;
+  background-color: bisque;
+  border-radius: 20%;
+  width: 4vw;
+  height: 4vw;
+  padding: 10px;
+  margin: 0 auto;
+  border: 2px solid black;
 }
 
 /* PROJECTS */
 
 #projects {
-    width: 30%;
-
+  width: 30%;
 }
 
 #projects ul {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    align-content: center;
-    margin: 0 -20px;
-    background-color: rgb(247, 166, 134);
-    border-top: 2px black solid;
-    border-bottom: 2px black solid;
-    /* overflow-y: scroll; */
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  margin: 0 -20px;
+  background-color: rgb(247, 166, 134);
+  border-top: 2px black solid;
+  border-bottom: 2px black solid;
+  /* overflow-y: scroll; */
 }
 
 #projects a {
-    border: 2px black solid;
-    margin: 5px;
-    padding: 10px;
-    border-radius: 5px;
-    background-color: bisque;
-    height: 40%;
-    width: 40%;
+  border: 2px black solid;
+  margin: 5px;
+  padding: 10px;
+  border-radius: 5px;
+  background-color: bisque;
+  height: 40%;
+  width: 40%;
 }
 
 #projects a:hover {
-    border: 2px black dashed;
-    cursor: pointer;
+  border: 2px black dashed;
+  cursor: pointer;
 }
 
 #projects h3 {
-    text-align: center;
+  text-align: center;
 }
 
 #projects img {
-    border: 2px black solid;
-    width: 98%;
-    border-radius: 5px;
+  border: 2px black solid;
+  width: 98%;
+  border-radius: 5px;
 }
 
 /* FORM */
 
 #contact a {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 #contact a:hover {
-    color: bisque;
+  color: bisque;
 }
 
 #contact ul {
-    display: flex;
-    justify-content: center;
-    background-color: rgb(247, 166, 134);
-    margin: 0;
-    border-top: 2px black solid;
-    border-bottom: 2px black solid;
+  display: flex;
+  justify-content: center;
+  background-color: rgb(247, 166, 134);
+  margin: 0;
+  border-top: 2px black solid;
+  border-bottom: 2px black solid;
 }
 
 #contact a {
-    margin: -10px 30px;
-    font-size: 3vh;
-    font-family: 'Bungee Shade', cursive;
+  margin: -10px 30px;
+  font-size: 3vh;
+  font-family: "Bungee Shade", cursive;
 }
 
-@media only screen and (max-width: 800px) {
-    #mainContainer {
-        flex-direction: column;
-        align-content: center;
-    }
-
-    #mainContainer div, #skills {
-        width: 80%;
-    }
-
-    #contact ul {
-        flex-direction: column;
-    }
-
-    #contact a {
-        font-size: 10vw;
-    }
-
-    #skills img {
-        display: none;
-    }
+@media only screen and (max-width: 1000px) {
+  #mainContainer {
+    flex-direction: column;
+    align-content: center;
   }
 
+  #mainContainer div,
+  #skills {
+    width: 80%;
+  }
 
-/* ToolTip */
+  #contact ul {
+    flex-direction: column;
+  }
 
-/* [data-tooltip]:hover::after {
-    content: attr(data-tooltip);
-} */
+  #contact a {
+    font-size: 10vw;
+  }
 
-/* [data-tooltip] {
-    display: relative;
+  #skills img {
+    display: none;
+  }
 }
-
-li[data-tooltip]:hover::after {
-    content: attr(data-tooltip);
-    position: absolute;
-    right: 150px;
-    display: inline-block;
-    background-color: bisque;
-    border-radius: 10px;
-    padding: 10px;
-    border: 2px black solid;
-} */
