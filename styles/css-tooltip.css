@@ -19,8 +19,9 @@
 
 [data-tooltip]:before {
   content: attr(data-tooltip);
-  background: #333;
-  color: #eee;
+  background: rgb(247, 166, 134);
+  border: 2px solid black;
+  font-weight: bold;
   padding: 8px 12px;
   white-space: nowrap;
   bottom: 100%;
