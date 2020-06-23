@@ -31,6 +31,7 @@ h2 {
 iframe {
   border-radius: 10px;
   border: 2px black solid;
+  height: 30vh;
 }
 
 #mainContainer {
@@ -214,5 +215,9 @@ iframe {
 
   #skills img {
     display: none;
+  }
+
+  #projects a {
+    width: 100%;
   }
 }
