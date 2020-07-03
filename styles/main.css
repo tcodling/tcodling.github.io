@@ -144,6 +144,15 @@ iframe {
   /* overflow-x: scroll; */
 }
 
+/* If anyone sees this I know it is terrible practice please don't judge me I will fix it :0 */
+
+#github {
+  color: red !important;
+  padding: 0 !important;
+  border: none !important;
+  margin: 0 !important;
+}
+
 #projects a {
   border: 2px black solid;
   margin: 5px;
