@@ -236,3 +236,24 @@ iframe {
     height: 20vh; 
   }
 }
+
+
+/* width */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: black
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: bisque
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(66, 27, 27);
+}
