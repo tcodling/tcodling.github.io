@@ -6,6 +6,7 @@ body {
   background-color: rgb(66, 27, 27);
   margin: 0;
   font-family: "Rubik", sans-serif;
+  overflow-x: hidden;
 }
 
 a {
