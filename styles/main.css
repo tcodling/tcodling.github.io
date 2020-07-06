@@ -32,7 +32,7 @@ h2 {
 iframe {
   border-radius: 10px;
   border: 2px black solid;
-  height: 30vh;
+  height: 55vh;
 }
 
 #mainContainer {
@@ -68,11 +68,12 @@ iframe {
 
 #about {
   /* background-color: orange; */
-  width: 30%;
+  width: 28%;
 }
 
 #about img {
-  width: 30vw;
+  width: 27vw;
+  margin: 10px auto;
 }
 
 #about p {
@@ -91,7 +92,7 @@ iframe {
   border-radius: 0;
   border: 0;
   border-bottom: 2px black solid;
-  width: 25%;
+  width: 28%;
 }
 
 #skills ul {
@@ -103,15 +104,14 @@ iframe {
   border-top: 2px black solid;
   border-bottom: 2px black solid;
   display: flex;
-  flex-wrap: wrap;
   justify-content: space-around;
   height: 85%;
 }
 
 #skills li {
   font-weight: bold;
-  font-size: 90%;
-  margin: 10px;
+  font-size: 15px;
+  margin: 5px;
   text-align: center;
 }
 
@@ -129,7 +129,7 @@ iframe {
 /* PROJECTS */
 
 #projects {
-  width: 30%;
+  width: 28%;
 }
 
 #projects ul {
@@ -229,5 +229,9 @@ iframe {
 
   #projects a {
     width: 100%;
+  }
+
+  iframe{
+    height: 20vh; 
   }
 }
