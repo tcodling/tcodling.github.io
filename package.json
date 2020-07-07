@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/tcodling/tcodling.github.io#readme",
   "dependencies": {
-    "css-tooltip": "^0.3.2"
+    "css-tooltip": "^0.3.2",
+    "sass": "^1.26.10"
   }
 }
