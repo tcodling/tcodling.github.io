@@ -1,48 +1,36 @@
 @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Rubik&display=swap");
-
 /* SWEEPING CHANGES */
-
 body {
-  background-color: rgb(66, 27, 27);
+  background-color: #421b1b;
   margin: 0;
   font-family: "Rubik", sans-serif;
-  overflow-x: hidden;
-}
+  overflow-x: hidden; }
 
 a {
   text-decoration: none;
-  color: black;
-}
+  color: black; }
 
 ul {
   padding: 0;
-  list-style-type: none;
-}
+  list-style-type: none; }
 
-h1,
 h2 {
   font-family: "Bungee Shade", cursive;
   margin: 0;
   margin-top: -10px;
-}
-
-h2 {
-  font-size: 30px;
-}
+  font-size: 30px; }
 
 iframe {
   border-radius: 10px;
   border: 2px black solid;
-  height: 55vh;
-}
+  height: 55vh; }
 
 #mainContainer {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   width: 100%;
-  margin: 0 auto;
-}
+  margin: 0 auto; }
 
 #mainContainer div,
 #skills {
@@ -50,210 +38,152 @@ iframe {
   background-color: bisque;
   border-radius: 10px;
   margin: 10px;
-  padding: 20px;
-}
+  padding: 20px; }
 
 /* HEADER */
-
 .mainHeading {
   font-family: "Bungee Shade", cursive;
   font-size: 60px;
-  color: black;
-  background-color: rgb(247, 166, 134);
+  background-color: #f7a686;
   margin: 0;
   padding-left: 20px;
-  border-bottom: 2px black solid;
-}
+  border-bottom: 2px black solid; }
 
 /* ABOUT */
-
 #about {
-  /* background-color: orange; */
-  width: 28%;
-}
-
-#about img {
-  width: 27vw;
-  margin: 10px auto;
-}
-
-#about p {
-  border-top: 2px black solid;
-  border-bottom: 2px black solid;
-  background-color: rgb(247, 166, 134);
-  padding: 10px;
-  margin: 0 -20px;
-}
+  width: 28%; }
+  #about img {
+    width: 27vw;
+    margin: 10px auto; }
+  #about p {
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    background-color: #f7a686;
+    padding: 10px;
+    margin: 0 -20px; }
 
 /* SKILLS */
-
 #skills {
-  /* width: 80%; */
   margin: 0 auto;
   border-radius: 0;
   border: 0;
-  border-bottom: 2px black solid;
-  width: 28%;
-}
-
-#skills ul {
-  background-color: rgb(247, 166, 134);
-  /* border-radius: 10px; */
-  flex-wrap: wrap;
-  margin: 0 -20px;
-  padding: 10px;
-  border-top: 2px black solid;
-  border-bottom: 2px black solid;
-  display: flex;
-  justify-content: space-around;
-  height: 85%;
-}
-
-#skills li {
-  font-weight: bold;
-  font-size: 15px;
-  margin: 5px;
-  text-align: center;
-}
-
-#skills img {
-  display: block;
-  background-color: bisque;
-  border-radius: 20%;
-  width: 4vw;
-  height: 4vw;
-  padding: 10px;
-  margin: 0 auto;
-  border: 2px solid black;
-}
+  width: 28%; }
+  #skills ul {
+    background-color: #f7a686;
+    flex-wrap: wrap;
+    margin: 0 -20px;
+    padding: 10px;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid;
+    display: flex;
+    justify-content: space-around;
+    height: 85%; }
+  #skills li {
+    font-weight: bold;
+    font-size: 15px;
+    margin: 5px;
+    text-align: center; }
+  #skills img {
+    display: block;
+    background-color: bisque;
+    border-radius: 20%;
+    width: 4vw;
+    height: 4vw;
+    padding: 10px;
+    margin: 0 auto;
+    border: 2px black solid; }
 
 /* PROJECTS */
-
 #projects {
-  width: 28%;
-}
-
-#projects ul {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  align-items: center;
-  align-content: center;
-  margin: 0 -20px;
-  background-color: rgb(247, 166, 134);
-  border-top: 2px black solid;
-  border-bottom: 2px black solid;
-  /* overflow-x: scroll; */
-}
+  width: 28%; }
+  #projects ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+    margin: 0 -20px;
+    background-color: #f7a686;
+    border-top: 2px black solid;
+    border-bottom: 2px black solid; }
+  #projects a {
+    border: 2px black solid;
+    margin: 5px;
+    padding: 10px;
+    border-radius: 5px;
+    background-color: bisque;
+    height: 40%;
+    width: 40%; }
+  #projects a:hover {
+    border: 2px black dashed;
+    cursor: pointer; }
+  #projects h3 {
+    text-align: center; }
+  #projects img {
+    border: 2px black solid;
+    width: 98%;
+    border-radius: 5px; }
 
 /* If anyone sees this I know it is terrible practice please don't judge me I will fix it :0 */
-
 #github {
   color: red !important;
   padding: 0 !important;
   border: none !important;
-  margin: 0 !important;
-}
+  margin: 0 !important; }
 
-#projects a {
-  border: 2px black solid;
-  margin: 5px;
-  padding: 10px;
-  border-radius: 5px;
-  background-color: bisque;
-  height: 40%;
-  width: 40%;
-}
-
-#projects a:hover {
-  border: 2px black dashed;
-  cursor: pointer;
-}
-
-#projects h3 {
-  text-align: center;
-}
-
-#projects img {
-  border: 2px black solid;
-  width: 98%;
-  border-radius: 5px;
-}
-
-/* FORM */
-
+/* CONTACT */
 #contact a {
-  font-weight: bold;
-}
-
+  margin: -10px 30px;
+  font-size: 30px;
+  font-family: "Bungee Shade", cursive;
+  font-weight: bold; }
 #contact a:hover {
-  color: bisque;
-}
-
+  color: bisque; }
 #contact ul {
   display: flex;
   justify-content: center;
-  background-color: rgb(247, 166, 134);
+  background-color: #f7a686;
   margin: 0;
   border-top: 2px black solid;
-  border-bottom: 2px black solid;
-}
-
-#contact a {
-  margin: -10px 30px;
-  font-size: 3vh;
-  font-family: "Bungee Shade", cursive;
-}
+  border-bottom: 2px black solid; }
 
 @media only screen and (max-width: 800px) {
   #mainContainer {
     flex-direction: column;
-    align-content: center;
-  }
+    align-content: center; }
 
   #mainContainer div,
   #skills {
-    width: 80%;
-  }
+    width: 80%; }
 
   #contact ul {
-    flex-direction: column;
-  }
+    flex-direction: column; }
 
   #contact a {
-    font-size: 10vw;
-  }
+    font-size: 10vw; }
 
   #skills img {
-    display: none;
-  }
+    display: none; }
 
   #projects a {
-    width: 100%;
-  }
+    width: 100%; }
 
-  iframe{
-    height: 20vh; 
-  }
-}
-
-
+  iframe {
+    height: 20vh; } }
 /* width */
 ::-webkit-scrollbar {
-  width: 10px;
-}
+  width: 10px; }
 
 /* Track */
 ::-webkit-scrollbar-track {
-  background: black
-}
+  background: black; }
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: bisque
-}
+  background: bisque; }
 
 /* Handle on hover */
 ::-webkit-scrollbar-thumb:hover {
-  background: rgb(66, 27, 27);
-}
+  background: #421b1b; }
+
+/*# sourceMappingURL=main.css.map */
