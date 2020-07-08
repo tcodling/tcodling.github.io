@@ -93,6 +93,34 @@ iframe {
     margin: 0 auto;
     border: 2px black solid; }
 
+#skills2 {
+  color: white; }
+  #skills2 ul li {
+    text-align: center;
+    width: 20vw;
+    height: 20vw; }
+  #skills2 img {
+    display: inline-block;
+    border-radius: 20%;
+    width: 15vw;
+    height: 15vw;
+    padding: 10px;
+    margin: 0 auto; }
+  #skills2 .wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    transform: rotate(0deg) translateY(0vh);
+    transform-origin: top left; }
+  #skills2 .outerWrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute; }
+
 /* PROJECTS */
 #projects {
   width: 28%; }

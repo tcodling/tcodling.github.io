@@ -126,6 +126,45 @@ iframe {
   }
 }
 
+#skills2 {
+  color: white;
+  ul li {
+    text-align: center;
+    width: 20vw;
+    height: 20vw;
+  }
+
+  img {
+    display: inline-block;
+    // background-color: $color2;
+    border-radius: 20%;
+    width: 15vw;
+    height: 15vw;
+    padding: 10px;
+    margin: 0 auto;
+    // border: $blackBorder;
+  }
+
+  // horizontal scroll
+  .wrapper {
+    display: flex;
+    flex-direction: row;
+    width: 80vw;
+    transform: rotate(0deg) translateY(-000vh);
+    transform-origin: top left;
+  }
+
+  .outerWrapper {
+    width: 100vh;
+    height: 100vw;
+    transform: rotate(-90deg) translateX(-100vh);
+    transform-origin: top left;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    position: absolute;
+  }
+}
+
 
 
 /* PROJECTS */
