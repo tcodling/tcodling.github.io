@@ -68,6 +68,14 @@ iframe {
   border-bottom: $blackBorder;
 }
 
+.mainHeading:hover {
+  background-image: url(../media/images/matrix.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  color: transparent;
+}
+
 /* ABOUT */
 
 #about {
