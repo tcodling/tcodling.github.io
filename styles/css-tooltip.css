@@ -19,7 +19,7 @@
 
 [data-tooltip]:before {
   content: attr(data-tooltip);
-  background: rgb(247, 166, 134);
+  background: #f8f3d4;
   border: 2px solid black;
   font-weight: bold;
   text-align: center;

@@ -2,9 +2,9 @@
 
 // Variables
 
-$color1: rgb(247, 166, 134);
-$color2: bisque;
-$background: rgb(66, 27, 27);
+$color1: #fae196;
+$color2: #f8f3d4;
+$background: #f6416c;
 $blackBorder: 2px black solid;
 $titleFont: "Bungee Shade", cursive;
 $contentFont: "Rubik", sans-serif;
@@ -62,7 +62,7 @@ iframe {
 .mainHeading {
   font-family: $titleFont;
   font-size: 60px;
-  background-color: $color1;
+  background-color: $color2;
   margin: 0;
   padding-left: 20px;
   border-bottom: $blackBorder;
@@ -84,6 +84,7 @@ iframe {
     background-color: $color1;
     padding: 10px;
     margin: 0 -20px;
+    // color: white;
   }
 }
 
@@ -112,6 +113,7 @@ iframe {
     font-size: 15px;
     margin: 5px;
     text-align: center;
+    // color: white;
   }
 
   img {
@@ -177,7 +179,7 @@ iframe {
 /* If anyone sees this I know it is terrible practice please don't judge me I will fix it :0 */
 
 #github {
-  color: red !important;
+  color: $background !important;
   padding: 0 !important;
   border: none !important;
   margin: 0 !important;
@@ -195,13 +197,13 @@ iframe {
   }
 
   a:hover {
-    color: $color2;
+    color: $color1;
   }
 
   ul {
     display: flex;
     justify-content: center;
-    background-color: $color1;
+    background-color: $color2;
     margin: 0;
     border-top: $blackBorder;
     border-bottom: $blackBorder;
