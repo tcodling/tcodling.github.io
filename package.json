@@ -1,23 +1,11 @@
 {
-  "name": "tcodling.github.io",
+  "name": "myportfolio",
   "version": "1.0.0",
   "description": "",
-  "main": "script.js",
+  "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/tcodling/tcodling.github.io.git"
-  },
   "author": "",
-  "license": "ISC",
-  "bugs": {
-    "url": "https://github.com/tcodling/tcodling.github.io/issues"
-  },
-  "homepage": "https://github.com/tcodling/tcodling.github.io#readme",
-  "dependencies": {
-    "css-tooltip": "^0.3.2",
-    "sass": "^1.26.10"
-  }
+  "license": "ISC"
 }

@@ -1,91 +1,114 @@
 <!DOCTYPE html>
-
 <html lang="en">
-  <head>
-    <title>Thomas Codling</title>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="shortcut icon" type="image/png" href="./media/images/thomasface.png"/>
-    <link href="./styles/main.css" rel="stylesheet" type="text/css" />
-    <link href="./styles/animations.css" rel="stylesheet" type="text/css" />
-    <link rel="stylesheet" href="./styles/css-tooltip.css">
-    <style>
-      #redirect {
-        text-align: center;
-      }
-    </style>
-  </head>
-  <body>
-    <!-- <h1 class='mainHeading slide-in-top'>Thomas Codling</h1>
-    
-    <div id='mainContainer'>
-      <div class='slide-in-left2' id='about'>
-        <h2>About Me</h2>
-        <iframe width="100%" height='60%' src="https://www.youtube.com/embed/wHnwBMpFsHE" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Thomas Codling</title>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.15.1/devicon.min.css">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <h1>Thomas Codling</h1>
+        <h2>Full Stack Web Developer based in Auckland, NZ</h2>
         <p>
-          I am a Full Stack Web Developer currently based in Dunedin NZ.<br><br>
-          I trained at Enspiral Dev Academy after teaching myself web development for 4 months. I am always learning new tech and looking for opportunities to improve my skills.<br><br>
-          I love the combination of logical and creative thinking that is used in software development. I enjoy developing websites, games or pretty much anything that uses technology and problem solving skills! I am always keen to try a new language 
-          and tackle a new problem.<br>
+            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Cras luctus
+            convallis sapien eu facilisis. Proin dui ligula, sodales sit amet
+            lobortis ac, consectetur eget massa. Nulla orci ex, aliquet ac
+            tellus vitae, tincidunt finibus metus. Donec accumsan, neque a
+            lobortis rutrum, ex est hendrerit augue, vitae malesuada nunc purus
+            eget elit. Cras a lectus gravida, mollis arcu at, consectetur quam.
+            Pellentesque porta ligula quis nunc lacinia aliquam. Donec arcu
+            massa, viverra eu ipsum ut, interdum fringilla felis. Proin et
+            pharetra ante, vel accumsan nunc. Ut dapibus congue iaculis. Proin a
+            hendrerit nisl. Nulla facilisi. Aliquam eget massa vel turpis
+            fringilla iaculis.
         </p>
-         <img src='./media/images/thomas.png' /> 
-      </div>
-      <div class='slide-in-bottom' id='skills'>
-        <h2>Skills</h2>
-        <ul>
-          <li>JavaScript<img src="./media/images/skill-symbols/js-flat.svg" alt="JavaScript"></li>
-          <li>HTML<img src="./media/images/skill-symbols/html-flat.svg" alt="HTML"></li>
-          <li>CSS<img src="./media/images/skill-symbols/css-flat.svg" alt="CSS"></li>
-          <li>Node<img src="./media/images/skill-symbols/node.png" alt="Node"></li>
-          <li>React<img src="./media/images/skill-symbols/react-2.svg" alt="React"></li>
-          <li>Redux<img src="./media/images/skill-symbols/redux.svg" alt="Redux"></li>
-          <li>Ruby<img src="./media/images/skill-symbols/ruby.svg" alt="Ruby on rails"></li>
-          <li>Rails<img src="./media/images/skill-symbols/rails-1.svg" alt="Ruby on rails"></li>
-          <li>Sass<img src="./media/images/skill-symbols/sass-1.svg" alt="Sass"></li>
-          <li>Git<img src="./media/images/skill-symbols/git-icon.svg" alt="Git"></li>
-          <li>Express<img src="./media/images/skill-symbols/express-109.svg" alt="Express"></li>
-          <li>Handlebars<img src="./media/images/skill-symbols/handlebars-1.svg" alt="Handlebars"></li>
-          <li>Knex<img src="./media/images/skill-symbols/knex-1.svg" alt="Knex"></li>
-          <li>Phaser<img src="./media/images/skill-symbols/phaser.png" alt="Phaser"></li>
-          <li>Agile<img src="./media/images/skill-symbols/agile.svg" alt="Agile"></li>
-          <li>Presenting<img src="./media/images/skill-symbols/person.svg" alt="Agile"></li>
-        </ul>
-      </div>
-      <div class='slide-in-right1' id='projects'>
-        <h2>Projects</h2>
-        <p>Here are some projects I am working on as well as some past ones! The source code for all of these can be found on my <a id='github' href='https://github.com/tcodling' target="_blank" >GitHub</a></a></p>
-        <ul>
-          <a class='tooltip-multiline' data-tooltip='A Last Card game built in React.js. It lets you play a computer using classic Last Card rules. It also has the option to change the look of the board and cards. (IN DEVELOPMENT)' target='_blank' href='https://lastcard.herokuapp.com/'><li>
-            <h3>Last Card</h3>
-            <img src="./media/images/lastcard2.PNG" />
-          </li></a>
-          <a class='tooltip-multiline' data-tooltip='A website for Crosstrees Chalet, a luxury rental on Waiheke Island. (IN DEVELOPMENT)' target='_blank' href='https://tcodling.github.io/Crosstrees-Chalet'><li>
-            <h3>Crosstrees</h3>
-            <img src="./media/images/crosstrees.PNG" />
-          </li></a>
-          <a class='tooltip-multiline' data-tooltip='A classic Todo app built in Ruby on Rails. It uses authentication so each user on the site can create their own account and lists. The passwords are encrypted using the bcrypt hashing algorithm.' target='_blank' href='https://sleepy-gorge-32035.herokuapp.com/'><li>
-            <h3>Rails Todo</h3>
-            <img src="./media/images/railsTodo.PNG" />
-          </li></a>
-          <a class='tooltip-multiline' data-tooltip='A web series built in React.js and Redux.js. The chapters are fetched from the Contentful API so the author can easily update the site.' target='_blank' href='https://junkie2035.herokuapp.com/'><li>
-            <h3>Junkie2035</h3>
-            <img src="./media/images/junkie2035.PNG" />
-          </li></a>
-          <a class='tooltip-multiline' data-tooltip='My final group project at Dev Academy. I was the project lead as well as working on the front end of the website. I have come a long way since this project but I am still extremely proud of what my group was able to accomplish in the short time given to us.' target='_blank' href='http://plantheads.herokuapp.com/'><li>
-            <h3>PlantHeads</h3>
-            <img src="./media/images/plantheads.PNG" />
-          </li></a>
-        </ul>
-      </div>
-    </div>
-    <div class='slide-in-right2' id='contact'>
-      <ul>
-        <li><a target="_blank" href='https://www.linkedin.com/in/thomascodling/'>LinkedIn</a></li>
-        <li><a target="_blank" href='https://github.com/tcodling'>GitHub</a></li>
-        <li><a target="_blank" href="mailto:thomas.codling@outlook.com">Email</a></li>
-      </ul>
-    </div> -->
-    <h1 id='redirect'>You are being redirected to my new site!</h1>
-  </body>
-  <script src='./script.js'></script>
+        <div class="skillIcons">
+            <h3>Experienced languages/frameworks:</h3>
+            <div class="highExperienceSkills">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webflow/webflow-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" />
+            </div>
+            <h3>Some Experience/Still Learning:</h3>
+            <div class="mediumExperienceSkills">
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain-wordmark.svg" />
+                <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" />
+
+            </div>
+
+            <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original-wordmark.svg" /> -->
+            <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-plain-wordmark.svg" /> -->
+            <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-plain-wordmark.svg" /> -->
+            <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg" /> -->
+            <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-plain-wordmark.svg" /> -->
+            <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original-wordmark.svg" /> -->
+            <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain-wordmark.svg" /> -->
+            <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-plain-wordmark.svg" /> -->
+            <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-plain.svg" /> -->
+            <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-plain-wordmark.svg" /> -->
+            <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-plain-wordmark.svg" /> -->
+            <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-plain-wordmark.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-plain-wordmark.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg" /> -->
+            <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-plain.svg" /> -->
+            <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-plain-wordmark.svg" /> -->
+            <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original-wordmark.svg" /> -->
+            <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg" /> -->
+            <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg" /> -->
+            <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original-wordmark.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain-wordmark.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/visualstudio/visualstudio-plain-wordmark.svg" />
+            <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webflow/webflow-original.svg" /> -->
+            <!-- <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-plain-wordmark.svg" /> -->
+        </div>
+
+
+        <div class="exampleProjects">
+            <div class="project">
+                <h3>Waiheke Aqua</h3>
+                <img src="./tempmockup.jpg" />
+            </div>
+            <div class="project">
+                <h3>Mike Morgan Art</h3>
+                <img src="./tempmockup.jpg" />
+            </div>
+            <div class="project">
+                <h3>Crosstrees Chalet</h3>
+                <img src="./tempmockup.jpg" />
+            </div>
+        </div>
+        <div class="exampleProjects">
+            <div class="project">
+                <h3>Find Your Food</h3>
+                <img src="./tempmockup.jpg" />
+            </div>
+            <div class="project">
+                <h3>React Minigames</h3>
+                <img src="./tempmockup.jpg" />
+            </div>
+        </div>
+    </body>
 </html>
