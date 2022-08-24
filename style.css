@@ -1,54 +1,77 @@
-@import url('https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Space+Mono&family=VT323&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Space+Mono&family=VT323&display=swap");
 /* font-family: 'Major Mono Display', monospace;
 font-family: 'Space Mono', monospace;
 font-family: 'VT323', monospace; */
-
 body {
-    font-family: 'Space Mono', monospace;
-    margin: 20px;
-
+  font-family: "Space Mono", monospace;
+  margin: 20px;
 }
 
 h3 {
-    box-shadow: 5px 5px #5c6d70;
-    background-color: white;
-    padding: 5px;
-    border-radius: 4px;
-    display: inline-block;
+  box-shadow: 5px 5px #5c6d70;
+  background-color: white;
+  padding: 5px;
+  border-radius: 4px;
+  display: inline-block;
 }
 
 .skillIcons {
-    background-color: beige;
-
-    padding: 20px;
+  background-color: beige;
+  padding: 20px;
 }
-
-
+.skillIcons .skillIcon {
+  display: inline-block;
+  position: relative;
+  width: 10%;
+}
+.skillIcons .tooltip {
+  background-color: white;
+  display: inline-block;
+  position: absolute;
+  bottom: 105%;
+  display: none;
+  padding: 10px;
+  border-radius: 4px;
+  width: 200%;
+  box-shadow: 5px 5px #5c6d70;
+}
 .skillIcons img {
-    width: 5%;
-    box-shadow: 5px 5px #5c6d70;
-    background-color: white;
-    border: 10px solid white;
-    border-radius: 4px;
-    margin-right: 5px;
-    margin-bottom: 5px;
+  box-shadow: 5px 5px #5c6d70;
+  background-color: white;
+  padding: 10px;
+  border-radius: 4px;
+  margin-right: 5px;
+  margin-bottom: 5px;
+  transition: box-shadow 0.5s, top 0.5s, left 0.5s;
+  position: relative;
+  top: 0;
+  left: 0;
+  box-shadow: none;
+  top: 5px;
+  left: 5px;
+}
+.skillIcons img:hover {
+  box-shadow: none;
+  top: 5px;
+  left: 5px;
+  box-shadow: 5px 5px #5c6d70;
+  top: 0;
+  left: 0;
 }
 
 .exampleProjects {
-    display: flex;
-    justify-content: center;
-    background-color: pink;
-    padding-bottom: 20px;
+  display: flex;
+  justify-content: center;
+  background-color: pink;
+  padding-bottom: 20px;
 }
-
 .exampleProjects .project {
-    width: 30%;
+  width: 30%;
 }
-
 .exampleProjects .project img {
-    width: 90%;
-    border-radius: 4px;
-    box-shadow: 5px 5px #5c6d70;
-
+  width: 90%;
+  border-radius: 4px;
+  box-shadow: 5px 5px #5c6d70;
 }
+
+/*# sourceMappingURL=style.css.map */
