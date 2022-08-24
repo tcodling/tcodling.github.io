@@ -4,8 +4,16 @@
 font-family: 'Space Mono', monospace;
 font-family: 'VT323', monospace; */
 
+// colour scheme : FFC4EB EAEFD3 ED6A5A 363636
+
+// original box shadow 5c6d70
+
 @mixin heading-font {
     font-family: "Space Mono", monospace;
+}
+
+@mixin standard-shadow {
+    box-shadow: 5px 5px #5c6d70;
 }
 
 body {
@@ -13,18 +21,24 @@ body {
     margin: 20px;
 }
 
-// h3 {
-//     box-shadow: 5px 5px #5c6d70;
-//     background-color: white;
-//     padding: 5px;
-//     border-radius: 4px;
-//     display: inline-block;
-// }
+.introSection {
+    background-color: #ffc4eb;
+    padding: 20px;
+
+    p {
+        margin: 0;
+        padding-bottom: 10px;
+    }
+}
 
 .skillIcons {
-    background-color: beige;
+    background-color: #eaefd3;
     padding: 20px;
-    
+
+    h3 {
+        margin-left: 5px;
+    }
+
     .skillIcon {
         display: inline-block;
         position: relative;
@@ -35,20 +49,15 @@ body {
         background-color: white;
         display: inline-block;
         position: absolute;
-        // left: 5px;
-        // top: -80px;
         bottom: 105%;
         display: none;
         padding: 10px;
         border-radius: 4px;
-        // border: 2px solid black;
-        width: 200%;
-        box-shadow: 5px 5px #5c6d70;
+        width: 250%;
+        @include standard-shadow;
     }
 
     img {
-        // width: 5%;
-        box-shadow: 5px 5px #5c6d70;
         background-color: white;
         padding: 10px;
         border-radius: 4px;
@@ -56,8 +65,6 @@ body {
         margin-bottom: 5px;
         transition: box-shadow 0.5s, top 0.5s, left 0.5s;
         position: relative;
-        top: 0;
-        left: 0;
 
         box-shadow: none;
         top: 5px;
@@ -65,22 +72,19 @@ body {
     }
 
     img:hover {
-        box-shadow: none;
-        top: 5px;
-        left: 5px;
-
-        box-shadow: 5px 5px #5c6d70;
+        @include standard-shadow;
         top: 0;
         left: 0;
     }
 }
 
-
 .exampleProjects {
     display: flex;
     justify-content: center;
-    background-color: pink;
+    flex-wrap: wrap;
+    background-color: #ed6a5a;
     padding-bottom: 20px;
+    padding: 20px;
 
     .project {
         width: 30%;
@@ -88,7 +92,41 @@ body {
         img {
             width: 90%;
             border-radius: 4px;
+            transition: box-shadow 0.5s, top 0.5s, left 0.5s;
+            position: relative;
+
+            box-shadow: none;
+            top: 5px;
+            left: 5px;
             // box-shadow: 5px 5px #5c6d70;
+            margin: 0;
+        }
+
+        h3 {
+            border-radius: 4px;
+            transition: box-shadow 0.5s, top 0.5s, left 0.5s;
+            position: relative;
+            box-shadow: none;
+            top: 5px;
+            left: 5px;
+            background-color: white;
+            display: inline-block;
+            padding: 10px;
+            margin-top: 0;
+            margin-bottom: 20px;
+        }
+
+        img:hover {
+            @include standard-shadow;
+            top: 0;
+            left: 0;
+        }
+
+        img:hover + h3 {
+            background-color: white;
+            @include standard-shadow;
+            top: 0;
+            left: 0;
         }
     }
 }

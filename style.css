@@ -7,9 +7,21 @@ body {
   margin: 20px;
 }
 
-.skillIcons {
-  background-color: beige;
+.introSection {
+  background-color: #ffc4eb;
   padding: 20px;
+}
+.introSection p {
+  margin: 0;
+  padding-bottom: 10px;
+}
+
+.skillIcons {
+  background-color: #eaefd3;
+  padding: 20px;
+}
+.skillIcons h3 {
+  margin-left: 5px;
 }
 .skillIcons .skillIcon {
   display: inline-block;
@@ -24,11 +36,10 @@ body {
   display: none;
   padding: 10px;
   border-radius: 4px;
-  width: 200%;
+  width: 250%;
   box-shadow: 5px 5px #5c6d70;
 }
 .skillIcons img {
-  box-shadow: 5px 5px #5c6d70;
   background-color: white;
   padding: 10px;
   border-radius: 4px;
@@ -36,16 +47,11 @@ body {
   margin-bottom: 5px;
   transition: box-shadow 0.5s, top 0.5s, left 0.5s;
   position: relative;
-  top: 0;
-  left: 0;
   box-shadow: none;
   top: 5px;
   left: 5px;
 }
 .skillIcons img:hover {
-  box-shadow: none;
-  top: 5px;
-  left: 5px;
   box-shadow: 5px 5px #5c6d70;
   top: 0;
   left: 0;
@@ -54,8 +60,10 @@ body {
 .exampleProjects {
   display: flex;
   justify-content: center;
-  background-color: pink;
+  flex-wrap: wrap;
+  background-color: #ed6a5a;
   padding-bottom: 20px;
+  padding: 20px;
 }
 .exampleProjects .project {
   width: 30%;
@@ -63,6 +71,36 @@ body {
 .exampleProjects .project img {
   width: 90%;
   border-radius: 4px;
+  transition: box-shadow 0.5s, top 0.5s, left 0.5s;
+  position: relative;
+  box-shadow: none;
+  top: 5px;
+  left: 5px;
+  margin: 0;
+}
+.exampleProjects .project h3 {
+  border-radius: 4px;
+  transition: box-shadow 0.5s, top 0.5s, left 0.5s;
+  position: relative;
+  box-shadow: none;
+  top: 5px;
+  left: 5px;
+  background-color: white;
+  display: inline-block;
+  padding: 10px;
+  margin-top: 0;
+  margin-bottom: 20px;
+}
+.exampleProjects .project img:hover {
+  box-shadow: 5px 5px #5c6d70;
+  top: 0;
+  left: 0;
+}
+.exampleProjects .project img:hover + h3 {
+  background-color: white;
+  box-shadow: 5px 5px #5c6d70;
+  top: 0;
+  left: 0;
 }
 
 /*# sourceMappingURL=style.css.map */
