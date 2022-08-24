@@ -55,6 +55,9 @@ body {
         border-radius: 4px;
         width: 250%;
         @include standard-shadow;
+        h5 {
+            margin: 0;
+        }
     }
 
     img {
