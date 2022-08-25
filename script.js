@@ -7,7 +7,10 @@ $(document).ready(function () {
             easing: "swing"
         })
     }, e => {
-        $(e.target).parent().children(".tooltip").hide()
+        $(e.target).parent().children(".tooltip").hide({
+            duration: 500,
+            easing: "swing"
+        })
     })
 
     $(".exampleProjects .project img").hover(e => {
@@ -17,7 +20,10 @@ $(document).ready(function () {
             easing: "swing"
         })
     }, e => {
-        $(e.target).parent().children(".tooltip").hide()
+        $(e.target).parent().children(".tooltip").hide({
+            duration: 500,
+            easing: "swing"
+        })
     })
 
 

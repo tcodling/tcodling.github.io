@@ -123,46 +123,44 @@ body {
         }
 
         img {
-            // border: 1px black solid;
             width: 80%;
             border-radius: 4px;
             transition: box-shadow 0.5s, top 0.5s, left 0.5s;
             position: relative;
-            // background-color: white;
             padding: 20px;
             box-shadow: none;
             top: 5px;
             left: 5px;
-            // box-shadow: 5px 5px #5c6d70;
             margin: 0;
+            cursor: pointer;
         }
 
-        h3 {
+        .projectName {
             border-radius: 4px;
-            transition: box-shadow 0.5s, top 0.5s, left 0.5s;
-            position: relative;
+            transition: box-shadow 0.5s, bottom 0.5s, left 0.5s;
+            position: absolute;
             box-shadow: none;
-            top: -60px;
-            left: 80px;
+            // top: -60px;
+            left: 0px;
+            bottom: -20px;
             background-color: white;
             display: inline-block;
             padding: 10px;
             margin-top: 0;
             margin-bottom: 20px;
-            // border: 1px black solid;
+            border: 1px black solid;
         }
 
         img:hover {
-            // @include standard-shadow;
             top: 0;
             left: 0;
         }
 
-        img:hover + h3 {
+        img:hover + .projectName {
             background-color: white;
             @include standard-shadow;
-            top: -65px;
-            left: 75px;
+            left: -5px;
+            bottom: -15px;
         }
     }
 }
