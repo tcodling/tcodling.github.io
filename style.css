@@ -28,6 +28,9 @@ body {
   position: relative;
   width: 10%;
 }
+.skillIcons .highExperienceSkills {
+  margin: 0 auto;
+}
 .skillIcons .tooltip {
   background-color: white;
   display: inline-block;
@@ -38,9 +41,13 @@ body {
   border-radius: 4px;
   width: 250%;
   box-shadow: 5px 5px #5c6d70;
+  border: 1px solid black;
 }
 .skillIcons .tooltip h5 {
   margin: 0;
+}
+.skillIcons .tooltip.left {
+  right: 5px;
 }
 .skillIcons img {
   background-color: white;
@@ -50,6 +57,7 @@ body {
   margin-bottom: 5px;
   transition: box-shadow 0.5s, top 0.5s, left 0.5s;
   position: relative;
+  border: 1px solid black;
   box-shadow: none;
   top: 5px;
   left: 5px;
@@ -70,12 +78,28 @@ body {
 }
 .exampleProjects .project {
   width: 30%;
+  position: relative;
+}
+.exampleProjects .project .tooltip {
+  background-color: white;
+  display: inline-block;
+  position: absolute;
+  bottom: 105%;
+  display: none;
+  padding: 10px;
+  border-radius: 4px;
+  box-shadow: 5px 5px #5c6d70;
+  border: 1px solid black;
+}
+.exampleProjects .project .tooltip h5 {
+  margin: 0;
 }
 .exampleProjects .project img {
-  width: 90%;
+  width: 80%;
   border-radius: 4px;
   transition: box-shadow 0.5s, top 0.5s, left 0.5s;
   position: relative;
+  padding: 20px;
   box-shadow: none;
   top: 5px;
   left: 5px;
@@ -86,8 +110,8 @@ body {
   transition: box-shadow 0.5s, top 0.5s, left 0.5s;
   position: relative;
   box-shadow: none;
-  top: 5px;
-  left: 5px;
+  top: -60px;
+  left: 80px;
   background-color: white;
   display: inline-block;
   padding: 10px;
@@ -95,15 +119,14 @@ body {
   margin-bottom: 20px;
 }
 .exampleProjects .project img:hover {
-  box-shadow: 5px 5px #5c6d70;
   top: 0;
   left: 0;
 }
 .exampleProjects .project img:hover + h3 {
   background-color: white;
   box-shadow: 5px 5px #5c6d70;
-  top: 0;
-  left: 0;
+  top: -65px;
+  left: 75px;
 }
 
 /*# sourceMappingURL=style.css.map */
