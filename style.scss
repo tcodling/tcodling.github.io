@@ -39,6 +39,10 @@ font-family: 'VT323', monospace; */
     }
 }
 
+.alertMessage {
+    color: red;
+    text-decoration: underline
+}
 
 body {
     @include heading-font;

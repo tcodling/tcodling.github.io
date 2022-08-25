@@ -2,6 +2,11 @@
 /* font-family: 'Major Mono Display', monospace;
 font-family: 'Space Mono', monospace;
 font-family: 'VT323', monospace; */
+.alertMessage {
+  color: red;
+  text-decoration: underline;
+}
+
 body {
   font-family: "Space Mono", monospace;
   margin: 20px;
