@@ -1,30 +1,17 @@
+
+const tooltipTransition = {
+    duration: 500,
+    easing: "swing"
+}
+
+
+
 $(document).ready(function () {
 
     // SHOW TOOLTIP ON ICON HOVER
-    $(".skillIcons .skillIcon img").hover(e => {
-        $(e.target).parent().children(".tooltip").show({
-            duration: 500,
-            easing: "swing"
-        })
+    $(".skillIcons .skillIcon img, .exampleProjects .project img").hover(e => {
+        $(e.target).parent().children(".tooltip").show(tooltipTransition)
     }, e => {
-        $(e.target).parent().children(".tooltip").hide({
-            duration: 500,
-            easing: "swing"
-        })
+        $(e.target).parent().children(".tooltip").hide(tooltipTransition)
     })
-
-    $(".exampleProjects .project img").hover(e => {
-        console.log($(e.target).parent().children())
-        $(e.target).parent().children(".tooltip").show({
-            duration: 500,
-            easing: "swing"
-        })
-    }, e => {
-        $(e.target).parent().children(".tooltip").hide({
-            duration: 500,
-            easing: "swing"
-        })
-    })
-
-
 });
