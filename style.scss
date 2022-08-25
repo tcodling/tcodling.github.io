@@ -12,13 +12,41 @@ font-family: 'VT323', monospace; */
     font-family: "Space Mono", monospace;
 }
 
+// @mixin body-font {
+
+// }
+
 @mixin standard-shadow {
     box-shadow: 5px 5px #5c6d70;
 }
 
+@mixin standard-border {
+    border: 1px solid black;
+}
+
+@mixin basic-tooltip {
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    display: none;
+    padding: 10px;
+    border-radius: 4px;
+    bottom: 105%;
+    @include standard-border;
+    @include standard-shadow;
+    h5 {
+        margin: 0;
+    }
+}
+
+
 body {
     @include heading-font;
     margin: 20px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    @include heading-font;
 }
 
 .introSection {
@@ -51,19 +79,8 @@ body {
     
 
     .tooltip {
-        background-color: white;
-        display: inline-block;
-        position: absolute;
-        bottom: 105%;
-        display: none;
-        padding: 10px;
-        border-radius: 4px;
+        @include basic-tooltip;
         width: 250%;
-        @include standard-shadow;
-        border: 1px solid black;
-        h5 {
-            margin: 0;
-        }
     }
 
     .tooltip.left {
@@ -78,13 +95,12 @@ body {
         margin-bottom: 5px;
         transition: box-shadow 0.5s, top 0.5s, left 0.5s;
         position: relative;
-        border: 1px solid black;
+        @include standard-border;
 
         box-shadow: none;
         top: 5px;
         left: 5px;
 
-        // border: 1px black solid;
     }
 
     img:hover {
@@ -107,19 +123,7 @@ body {
         position: relative;
 
         .tooltip {
-            background-color: white;
-            display: inline-block;
-            position: absolute;
-            bottom: 105%;
-            display: none;
-            padding: 10px;
-            border-radius: 4px;
-            // width: 100%;
-            @include standard-shadow;
-            border: 1px solid black;
-            h5 {
-                margin: 0;
-            }
+            @include basic-tooltip;
         }
 
         img {
@@ -140,7 +144,6 @@ body {
             transition: box-shadow 0.5s, bottom 0.5s, left 0.5s;
             position: absolute;
             box-shadow: none;
-            // top: -60px;
             left: 0px;
             bottom: -20px;
             background-color: white;
@@ -148,7 +151,7 @@ body {
             padding: 10px;
             margin-top: 0;
             margin-bottom: 20px;
-            border: 1px black solid;
+            @include standard-border;
         }
 
         img:hover {
@@ -157,7 +160,6 @@ body {
         }
 
         img:hover + .projectName {
-            background-color: white;
             @include standard-shadow;
             left: -5px;
             bottom: -15px;

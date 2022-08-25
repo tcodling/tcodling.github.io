@@ -7,6 +7,10 @@ body {
   margin: 20px;
 }
 
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Space Mono", monospace;
+}
+
 .introSection {
   background-color: #ffc4eb;
   padding: 20px;
@@ -35,13 +39,13 @@ body {
   background-color: white;
   display: inline-block;
   position: absolute;
-  bottom: 105%;
   display: none;
   padding: 10px;
   border-radius: 4px;
-  width: 250%;
-  box-shadow: 5px 5px #5c6d70;
+  bottom: 105%;
   border: 1px solid black;
+  box-shadow: 5px 5px #5c6d70;
+  width: 250%;
 }
 .skillIcons .tooltip h5 {
   margin: 0;
@@ -84,12 +88,12 @@ body {
   background-color: white;
   display: inline-block;
   position: absolute;
-  bottom: 105%;
   display: none;
   padding: 10px;
   border-radius: 4px;
-  box-shadow: 5px 5px #5c6d70;
+  bottom: 105%;
   border: 1px solid black;
+  box-shadow: 5px 5px #5c6d70;
 }
 .exampleProjects .project .tooltip h5 {
   margin: 0;
@@ -118,14 +122,13 @@ body {
   padding: 10px;
   margin-top: 0;
   margin-bottom: 20px;
-  border: 1px black solid;
+  border: 1px solid black;
 }
 .exampleProjects .project img:hover {
   top: 0;
   left: 0;
 }
 .exampleProjects .project img:hover + .projectName {
-  background-color: white;
   box-shadow: 5px 5px #5c6d70;
   left: -5px;
   bottom: -15px;
