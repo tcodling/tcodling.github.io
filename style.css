@@ -10,6 +10,7 @@ font-family: 'VT323', monospace; */
 body {
   font-family: "Space Mono", monospace;
   margin: 20px;
+  caret-color: transparent;
 }
 
 h1, h2, h3, h4, h5, h6 {
