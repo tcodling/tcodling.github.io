@@ -30,15 +30,24 @@ h1, h2, h3, h4, h5, h6 {
   padding: 20px;
 }
 .skillIcons h3 {
-  margin-left: 5px;
+  text-align: center;
 }
 .skillIcons .skillIcon {
   display: inline-block;
   position: relative;
   width: 10%;
+  margin-right: 10px;
+  margin-left: 5px;
 }
 .skillIcons .highExperienceSkills {
-  margin: 0 auto;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+.skillIcons .mediumExperienceSkills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
 }
 .skillIcons .tooltip {
   background-color: white;
@@ -56,14 +65,12 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 .skillIcons .tooltip.left {
-  right: 5px;
+  right: 0;
 }
 .skillIcons img {
   background-color: white;
   padding: 10px;
   border-radius: 4px;
-  margin-right: 5px;
-  margin-bottom: 5px;
   transition: box-shadow 0.5s, top 0.5s, left 0.5s;
   position: relative;
   border: 1px solid black;

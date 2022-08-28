@@ -68,19 +68,29 @@ h1, h2, h3, h4, h5, h6 {
     padding: 20px;
 
     h3 {
-        margin-left: 5px;
+        // margin-left: 5px;
+        text-align: center;
     }
 
     .skillIcon {
         display: inline-block;
         position: relative;
         width: 10%;
+        margin-right: 10px;
+        margin-left: 5px;
     }
 
     .highExperienceSkills {
-        margin: 0 auto;
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
     }
-    
+
+    .mediumExperienceSkills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
 
     .tooltip {
         @include basic-tooltip;
@@ -88,15 +98,15 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     .tooltip.left {
-        right: 5px;
+        right: 0;
     }
 
     img {
         background-color: white;
         padding: 10px;
         border-radius: 4px;
-        margin-right: 5px;
-        margin-bottom: 5px;
+        // margin-right: 5px;
+        // margin-bottom: 5px;
         transition: box-shadow 0.5s, top 0.5s, left 0.5s;
         position: relative;
         @include standard-border;
