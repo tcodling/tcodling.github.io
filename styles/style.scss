@@ -123,6 +123,13 @@ h1, h2, h3, h4, h5, h6 {
         @include standard-shadow;
         top: 0;
         left: 0;
+        cursor: pointer;
+    }
+
+    img:active {
+        box-shadow: none;
+        top: 5px;
+        left: 5px;
     }
 }
 

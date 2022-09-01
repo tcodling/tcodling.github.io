@@ -84,6 +84,12 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 5px 5px #5c6d70;
   top: 0;
   left: 0;
+  cursor: pointer;
+}
+.skillIcons img:active {
+  box-shadow: none;
+  top: 5px;
+  left: 5px;
 }
 
 .exampleProjects {
