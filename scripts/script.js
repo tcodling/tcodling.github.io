@@ -7,7 +7,9 @@ $(document).ready(function () {
 
     console.log($(location).attr('href'))
 
-    if ($(location).attr('href') = "https://tcodling.github.io")
+    if ($(location).attr('href') == "https://tcodling.github.io") {
+        $("body").hide()
+    }
 
     // SHOW TOOLTIP ON ICON HOVER
     $(".skillIcons .skillIcon img, .exampleProjects .project img").hover(
