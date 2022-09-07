@@ -5,10 +5,9 @@ const tooltipTransition = {
 
 $(document).ready(function () {
 
-    console.log($(location).attr('href'))
-
     if ($(location).attr('href') == "https://tcodling.github.io/") {
         $("body").hide()
+        alert("This website is currently being built! Send me an email at thomas.codling@outlook.com for business inquiries!");
     }
 
     // SHOW TOOLTIP ON ICON HOVER
