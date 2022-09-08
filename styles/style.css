@@ -37,14 +37,27 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px black solid;
   position: relative;
 }
+.skillIcons div {
+  position: relative;
+  text-align: center;
+}
+.skillIcons div button {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid black;
+  border-radius: 4px;
+  font-family: "Space Mono", monospace;
+  font-weight: bold;
+  font-size: medium;
+}
 .skillIcons h3 {
   text-align: center;
-  color: white;
 }
 .skillIcons .pg-canvas {
   position: absolute;
   top: 0;
   left: 0;
+  height: 100%;
 }
 .skillIcons .skillIcon {
   display: inline-block;
@@ -76,6 +89,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid black;
   box-shadow: 5px 5px #5c6d70;
   width: 250%;
+  text-align: left;
 }
 .skillIcons .tooltip h5 {
   margin: 0;
@@ -84,15 +98,18 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
 }
 .skillIcons img {
+  background-color: white;
   padding: 10px;
   border-radius: 4px;
   transition: box-shadow 0.5s, top 0.5s, left 0.5s, background-color 0.5s;
   position: relative;
+  border: 1px solid black;
   box-shadow: none;
   top: 5px;
   left: 5px;
 }
 .skillIcons img:hover {
+  box-shadow: 5px 5px #5c6d70;
   top: 0;
   left: 0;
   cursor: pointer;
