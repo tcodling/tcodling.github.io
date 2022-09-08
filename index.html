@@ -11,6 +11,9 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="./scripts/script.js"></script>
         <script src="./scripts/particleground-master/jquery.particleground.min.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
+        <script src="./scripts/skills.js" ></script>
+
     </head>
     <body>
         <div class="introSection">
@@ -28,236 +31,20 @@
             </p>
         </div>
         <div id="skillContainer" class="skillIcons">
-            <h3>Experienced in:</h3>
-            <div class="highExperienceSkills">
-                <div class="skillIcon">
-                    <div class="tooltip">
-                        <h5><i class="fa-brands fa-html5"></i> HTML</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://developer.mozilla.org/en-US/docs/Web/HTML"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip">
-                        <h5><i class="fa-brands fa-css3-alt"></i> CSS</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://developer.mozilla.org/en-US/docs/Web/CSS"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/css3/css3-original-wordmark.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip">
-                        <h5><i class="fa-brands fa-square-js"></i> JavaScript</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://developer.mozilla.org/en-US/docs/Web/JavaScript"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip">
-                        <h5><i class="fa-brands fa-php"></i> PHP</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://webflow.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip">
-                        <h5><i class="fa-solid fa-gem"></i> Ruby</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://webflow.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original-wordmark.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip">
-                        <h5><i class="fa-solid fa-database"></i> MySQL</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://webflow.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip">
-                        <h5><i class="fa-brands fa-sass"></i> Sass</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://webflow.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip left">
-                        <h5><i class="fa-brands fa-bootstrap"></i> Bootstrap</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-
-                    <img data-link="https://webflow.com/"
-                    src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip left">
-                        <h5>jQuery</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://webflow.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jquery/jquery-original-wordmark.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip">
-                        <h5><i class="fa-brands fa-react"></i> React</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://webflow.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip">
-                        <h5>Rails</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://webflow.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip">
-                        <h5><i class="fa-brands fa-node-js"></i> NodeJS</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://webflow.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg"
-                    />
-                </div>
-                <!-- <div class="skillIcon">
-                    <div class="tooltip">
-                        <h5>Redux</h5>
-                        A react addon that allows for transfer of data more
-                        easily between components
-                    </div>
-                    <img
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redux/redux-original.svg"
-                    />
-                </div> -->
-                <div class="skillIcon">
-                    <div class="tooltip">
-                        <h5>Webflow</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://webflow.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webflow/webflow-original.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip">
-                        <h5><i class="fa-brands fa-figma"></i> Figma</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://webflow.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip">
-                        <h5><i class="fa-brands fa-npm"></i> npm</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://webflow.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/npm/npm-original-wordmark.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip">
-                        <h5><i class="fa-brands fa-google"></i> Google SEO</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://webflow.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original-wordmark.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip left">
-                        <h5><i class="fa-brands fa-trello"></i> Trello</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://webflow.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain-wordmark.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip left">
-                        <h5><i class="fa-brands fa-git"></i> Git</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://webflow.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original-wordmark.svg"
-                    />
-                </div>
+            <div>
+                <button><i class="fa-solid fa-grip"></i> All Tech</button>
+                <button><i class="fa-solid fa-keyboard"></i> Languages</button>
+                <button><i class="fa-solid fa-computer"></i> Frameworks</button>
+                <button><i class="fa-solid fa-database"></i> Databases</button>
+                <button><i class="fa-solid fa-wrench"></i> Website Builders</button>
+                <button><i class="fa-solid fa-briefcase"></i> Workplace Tools</button>
+                <button><i class="fa-solid fa-file-pen"></i> Image Editors</button>
             </div>
-            <h3>Some Experience/Still Learning:</h3>
+            <!-- <h3>What I Do</h3> -->
+            <div class="highExperienceSkills">
+                
+            </div>
+            <!-- <h3>What I'm Learning</h3> -->
             <div class="mediumExperienceSkills">
                 <div class="skillIcon">
                     <div class="tooltip">

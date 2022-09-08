@@ -79,10 +79,24 @@ h1, h2, h3, h4, h5, h6 {
     border: 1px black solid;
     position: relative;
 
+    div {
+        position: relative;
+        text-align: center;
+        button {
+            background-color: white;
+            padding: 10px;
+            border: 1px solid black;
+            border-radius: 4px;
+            font-family: "Space Mono", monospace;
+            font-weight: bold;
+            font-size: medium;
+        }
+    }
+
     h3 {
         // margin-left: 5px;
         text-align: center;
-        color: white
+        // color: white
     }
 
     .pg-canvas {
@@ -124,14 +138,14 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     img {
-        // background-color: white;
+        background-color: white;
         padding: 10px;
         border-radius: 4px;
         // margin-right: 5px;
         // margin-bottom: 5px;
         transition: box-shadow 0.5s, top 0.5s, left 0.5s, background-color 0.5s;
         position: relative;
-        // @include standard-border;
+        @include standard-border;
 
         box-shadow: none;
         top: 5px;
@@ -140,7 +154,7 @@ h1, h2, h3, h4, h5, h6 {
     }
 
     img:hover {
-        // @include standard-shadow;
+        @include standard-shadow;
         top: 0;
         left: 0;
         cursor: pointer;
