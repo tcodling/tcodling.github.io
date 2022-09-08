@@ -64,4 +64,5 @@ $(document).ready(function () {
         dotColor: "#ed6a5a",
         lineColor: "#ed6a5a",
     });
+
 });
