@@ -18,8 +18,13 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .introSection {
-  background-color: #ffc4eb;
+  background-color: #ed6a5a;
+  color: #FFFCF2;
   padding: 20px;
+  border-width: 1px 1px 0 1px;
+  border-color: black;
+  border-style: solid;
+  border-radius: 4px 4px 0 0;
 }
 .introSection p {
   margin: 0;
@@ -27,11 +32,19 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skillIcons {
-  background-color: #eaefd3;
+  background-color: #FFFCF2;
   padding: 20px;
+  border: 1px black solid;
+  position: relative;
 }
 .skillIcons h3 {
   text-align: center;
+  color: white;
+}
+.skillIcons .pg-canvas {
+  position: absolute;
+  top: 0;
+  left: 0;
 }
 .skillIcons .skillIcon {
   display: inline-block;
@@ -45,6 +58,7 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
+  position: relative;
 }
 .skillIcons .mediumExperienceSkills {
   display: flex;
@@ -70,18 +84,15 @@ h1, h2, h3, h4, h5, h6 {
   right: 0;
 }
 .skillIcons img {
-  background-color: white;
   padding: 10px;
   border-radius: 4px;
-  transition: box-shadow 0.5s, top 0.5s, left 0.5s;
+  transition: box-shadow 0.5s, top 0.5s, left 0.5s, background-color 0.5s;
   position: relative;
-  border: 1px solid black;
   box-shadow: none;
   top: 5px;
   left: 5px;
 }
 .skillIcons img:hover {
-  box-shadow: 5px 5px #5c6d70;
   top: 0;
   left: 0;
   cursor: pointer;
@@ -92,7 +103,14 @@ h1, h2, h3, h4, h5, h6 {
   left: 5px;
 }
 
-.exampleProjects {
+.exampleProjectsContainer {
+  border-radius: 0 0 4px 4px;
+  border-width: 0 1px 1px 1px;
+  border-color: black;
+  border-style: solid;
+}
+
+.exampleProjects, .exampleProjectsContainer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -100,11 +118,11 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 20px;
   padding: 20px;
 }
-.exampleProjects .project {
+.exampleProjects .project, .exampleProjectsContainer .project {
   width: 30%;
   position: relative;
 }
-.exampleProjects .project .tooltip {
+.exampleProjects .project .tooltip, .exampleProjectsContainer .project .tooltip {
   background-color: white;
   display: inline-block;
   position: absolute;
@@ -115,10 +133,10 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid black;
   box-shadow: 5px 5px #5c6d70;
 }
-.exampleProjects .project .tooltip h5 {
+.exampleProjects .project .tooltip h5, .exampleProjectsContainer .project .tooltip h5 {
   margin: 0;
 }
-.exampleProjects .project img {
+.exampleProjects .project img, .exampleProjectsContainer .project img {
   width: 80%;
   border-radius: 4px;
   transition: box-shadow 0.5s, top 0.5s, left 0.5s;
@@ -130,25 +148,25 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   cursor: pointer;
 }
-.exampleProjects .project .projectName {
+.exampleProjects .project .projectName, .exampleProjectsContainer .project .projectName {
   border-radius: 4px;
   transition: box-shadow 0.5s, bottom 0.5s, left 0.5s;
   position: absolute;
   box-shadow: none;
   left: 0px;
   bottom: -20px;
-  background-color: white;
+  background-color: #FFFCF2;
   display: inline-block;
   padding: 10px;
   margin-top: 0;
   margin-bottom: 20px;
   border: 1px solid black;
 }
-.exampleProjects .project img:hover {
+.exampleProjects .project img:hover, .exampleProjectsContainer .project img:hover {
   top: 0;
   left: 0;
 }
-.exampleProjects .project img:hover + .projectName {
+.exampleProjects .project img:hover + .projectName, .exampleProjectsContainer .project img:hover + .projectName {
   box-shadow: 5px 5px #5c6d70;
   left: -5px;
   bottom: -15px;

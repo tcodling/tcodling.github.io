@@ -4,11 +4,12 @@ const tooltipTransition = {
 };
 
 $(document).ready(function () {
-
-    if ($(location).attr('href') == "https://tcodling.github.io/") {
-        $("body").hide()
-        alert("This website is currently being built! Send me an email at thomas.codling@outlook.com for business inquiries!");
-    }
+    // if ($(location).attr("href") == "https://tcodling.github.io/") {
+    //     $("body").hide();
+    //     alert(
+    //         "This website is currently being built! Send me an email at thomas.codling@outlook.com for business inquiries!"
+    //     );
+    // }
 
     // SHOW TOOLTIP ON ICON HOVER
     $(".skillIcons .skillIcon img, .exampleProjects .project img").hover(
@@ -36,4 +37,9 @@ $(document).ready(function () {
             }
         }
     );
+
+    $('#skillContainer').particleground({
+        dotColor: '#ed6a5a',
+        lineColor: '#ed6a5a'
+    });
 });

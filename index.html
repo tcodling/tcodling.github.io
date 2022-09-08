@@ -10,13 +10,10 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
         <script src="./scripts/script.js"></script>
+        <script src="./scripts/particleground-master/jquery.particleground.min.js"></script>
     </head>
     <body>
         <div class="introSection">
-            <h1 class="alertMessage">
-                THIS WEBSITE IS UNDER CONSTRUCTION PLEASE CONTACT ME AT
-                THOMAS.CODLING@OUTLOOK.COM FOR BUSINESS INQUIRIES
-            </h1>
             <h1>Thomas Codling - Full Stack Web Developer</h1>
             <!-- <h2>Full Stack Web Developer based in Auckland, NZ</h2> -->
             <p><i class="fa-solid fa-phone"></i> 022 045 3882</p>
@@ -30,7 +27,7 @@
                 me an email or give me a call using the details above.
             </p>
         </div>
-        <div class="skillIcons">
+        <div id="skillContainer" class="skillIcons">
             <h3>Experienced in:</h3>
             <div class="highExperienceSkills">
                 <div class="skillIcon">
@@ -346,10 +343,22 @@
                         src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original-wordmark.svg"
                     />
                 </div>
+                <div class="skillIcon">
+                    <div class="tooltip left">
+                        <h5>Gatsby</h5>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                        Sed at nibh lectus. Integer consectetur massa non libero
+                        consectetur fermentum sed at ligula.
+                    </div>
+                    <img
+                        data-link="https://www.gatsbyjs.com/"
+                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-plain-wordmark.svg"
+                    />
+                </div>
             </div>
         </div>
 
-        <div class="exampleProjects">
+        <div class="exampleProjectsContainer">
             <h3>My Projects:</h3>
             <div class="exampleProjects">
                 <div class="project">
