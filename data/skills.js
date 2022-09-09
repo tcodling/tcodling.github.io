@@ -110,13 +110,13 @@ const techSkills = [
             Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
         link: "",
     },
-    {
-        name: "Google SEO",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original-wordmark.svg",
-        tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
-            Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
-        link: "",
-    },
+    // {
+    //     name: "Google SEO",
+    //     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/google/google-original-wordmark.svg",
+    //     tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
+    //         Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
+    //     link: "",
+    // },
     {
         name: "Trello",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/trello/trello-plain-wordmark.svg",
@@ -139,20 +139,20 @@ const techSkills = [
             Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
         link: "",
     },
-    {
-        name: "Arduino",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original-wordmark.svg",
-        tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
-            Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
-        link: "",
-    },
-    {
-        name: "Rasberry Pi",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original-wordmark.svg",
-        tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
-            Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
-        link: "",
-    },
+    // {
+    //     name: "Arduino",
+    //     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original-wordmark.svg",
+    //     tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
+    //         Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
+    //     link: "",
+    // },
+    // {
+    //     name: "Rasberry Pi",
+    //     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original-wordmark.svg",
+    //     tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
+    //         Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
+    //     link: "",
+    // },
     {
         name: "Wordpress",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
@@ -160,13 +160,13 @@ const techSkills = [
             Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
         link: "",
     },
-    {
-        name: "Heroku",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain-wordmark.svg",
-        tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
-            Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
-        link: "",
-    },
+    // {
+    //     name: "Heroku",
+    //     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain-wordmark.svg",
+    //     tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
+    //         Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
+    //     link: "",
+    // },
     {
         name: "mongoDB",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg",

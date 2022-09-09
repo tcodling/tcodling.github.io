@@ -32,6 +32,11 @@ $(document).ready(function () {
         `)
     });
 
+    $(".skillIcons button").click(function() {
+        // document.querySelector('button').classList.remove("npmnpmactive");
+        $(this).addClass('active');
+    })
+
     // SHOW TOOLTIP ON ICON HOVER
     $(".skillIcons .skillIcon img, .projects .project img").hover(
         (e) => {
@@ -59,8 +64,23 @@ $(document).ready(function () {
         }
     );
 
-    $("#skillContainer").particleground({
+    setTimeout(function() {
+        console.log("funciton go")
+        $("#skillContainer").particleground({
         dotColor: "#ed6a5a",
         lineColor: "#ed6a5a",
-    });
+        parallaxMultiplier: 20
+        // curvedLines: 'true'
+        
+        });
+        $(".pg-canvas").animate({opacity: 1}, 2000)
+
+    }, 1000)
+
+    // $("#skillContainer").particleground({
+    //     dotColor: "#ed6a5a",
+    //     lineColor: "#ed6a5a",
+    //     // curvedLines: 'true'
+    // });
+    
 });
