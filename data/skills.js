@@ -1,3 +1,11 @@
+const LANGUAGE = 1;
+const FRAMEWORK = 2;
+const DATABASE = 3;
+const BUILDER = 4;
+const WORKPLACE = 5;
+const IMAGE = 6;
+
+
 const techSkills = [
     {
         name: "HTML",
@@ -6,6 +14,7 @@ const techSkills = [
             designed to be displayed in a web browser. It can be assisted by technologies such as 
             Cascading Style Sheets (CSS) and scripting languages such as JavaScript.`,
         link: "",
+        tag: LANGUAGE
     },
     {
         name: "CSS",
@@ -14,6 +23,7 @@ const techSkills = [
             presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone
             technology of the World Wide Web, alongside HTML and JavaScript`,
         link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
+        tag: LANGUAGE
     },
     {
         name: "Javascript",
@@ -24,12 +34,14 @@ const techSkills = [
             third-party libraries. All major web browsers have a dedicated JavaScript engine to execute 
             the code on users' devices.`,
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
+        tag: LANGUAGE
     },
     {
         name: "PHP",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/php/php-original.svg",
         tooltip: `PHP is a general-purpose scripting language geared toward web development.[5] It was originally created by Danish-Canadian programmer Rasmus Lerdorf in 1994.`,
         link: "",
+        tag: LANGUAGE
     },
     {
         name: "Ruby",
@@ -39,6 +51,7 @@ const techSkills = [
             simplicity. In Ruby, everything is an object, including primitive data types. It was developed in 
             the mid-1990s by Yukihiro "Matz" Matsumoto in Japan.`,
         link: "",
+        tag: LANGUAGE
     },
     {
         name: "MySQL",
@@ -46,6 +59,7 @@ const techSkills = [
         tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
             Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
         link: "",
+        tag: DATABASE
     },
     {
         name: "Sass",
@@ -53,6 +67,7 @@ const techSkills = [
         tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
             Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
         link: "",
+        tag: FRAMEWORK
     },
     {
         name: "Bootstrap",
@@ -60,6 +75,7 @@ const techSkills = [
         tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
             Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
         link: "",
+        tag: FRAMEWORK
     },
     {
         name: "jQuery",
@@ -67,6 +83,7 @@ const techSkills = [
         tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
             Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
         link: "",
+        tag: FRAMEWORK
     },
     {
         name: "React",
@@ -74,6 +91,7 @@ const techSkills = [
         tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
             Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
         link: "",
+        tag: FRAMEWORK
     },
     {
         name: "Rails",
@@ -81,6 +99,7 @@ const techSkills = [
         tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
             Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
         link: "",
+        tag: FRAMEWORK
     },
     {
         name: "NodeJS",
@@ -88,6 +107,7 @@ const techSkills = [
         tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
             Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
         link: "",
+        tag: FRAMEWORK
     },
     {
         name: "Webflow",
@@ -95,6 +115,7 @@ const techSkills = [
         tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
             Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
         link: "",
+        tag: BUILDER
     },
     {
         name: "Figma",
@@ -102,6 +123,7 @@ const techSkills = [
         tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
             Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
         link: "",
+        tag: IMAGE
     },
     {
         name: "npm",
@@ -109,6 +131,7 @@ const techSkills = [
         tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
             Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
         link: "",
+        tag: WORKPLACE
     },
     // {
     //     name: "Google SEO",
@@ -123,6 +146,7 @@ const techSkills = [
         tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
             Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
         link: "",
+        tag: WORKPLACE
     },
     {
         name: "Git",
@@ -130,6 +154,7 @@ const techSkills = [
         tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
             Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
         link: "",
+        tag: WORKPLACE
     },
 
     {
@@ -138,6 +163,7 @@ const techSkills = [
         tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
             Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
         link: "",
+        tag: LANGUAGE
     },
     // {
     //     name: "Arduino",
@@ -146,19 +172,20 @@ const techSkills = [
     //         Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
     //     link: "",
     // },
-    // {
-    //     name: "Rasberry Pi",
-    //     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original-wordmark.svg",
-    //     tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
-    //         Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
-    //     link: "",
-    // },
+    {
+        name: "Rasberry Pi",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original-wordmark.svg",
+        tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
+            Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
+        link: "",
+    },
     {
         name: "Wordpress",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg",
         tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
             Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
         link: "",
+        tag: BUILDER
     },
     // {
     //     name: "Heroku",
@@ -173,6 +200,7 @@ const techSkills = [
         tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
             Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
         link: "",
+        tag: DATABASE
     },
     {
         name: "Gimp",
@@ -180,6 +208,7 @@ const techSkills = [
         tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
             Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
         link: "",
+        tag: IMAGE
     },
     {
         name: "Gatsby",
@@ -187,5 +216,23 @@ const techSkills = [
         tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
             Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
         link: "",
+        tag: FRAMEWORK
+    },
+    ,
+    {
+        name: "Slack",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/slack/slack-original-wordmark.svg",
+        tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
+            Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
+        link: "",
+        tag: WORKPLACE
+    },
+    {
+        name: "Express",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg",
+        tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
+            Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
+        link: "",
+        tag: FRAMEWORK
     },
 ];

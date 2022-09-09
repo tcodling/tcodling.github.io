@@ -58,9 +58,10 @@ h1, h2, h3, h4, h5, h6 {
 
 .skillIcons {
   background-color: #FFFCF2;
-  padding: 80px 20px;
+  padding: 30px 20px;
   border: 1px black solid;
   position: relative;
+  height: 80vh;
 }
 .skillIcons div {
   position: relative;
@@ -75,18 +76,26 @@ h1, h2, h3, h4, h5, h6 {
   border-radius: 4px;
   font-family: "Space Mono", monospace;
   font-size: medium;
-  margin: 20px 10px;
+  margin: 10px 10px;
+  transition: box-shadow 0.5s, top 0.5s, left 0.5s, background-color 0.5s;
+  position: relative;
+  top: 0;
+  left: 0;
 }
 .skillIcons div button:hover {
-  border-width: 2px;
   cursor: pointer;
-  font-weight: bold;
+  box-shadow: 5px 5px #5c6d70;
+  top: -5px;
+  left: -5px;
+}
+.skillIcons div button:focus {
+  box-shadow: none;
+  top: 0px;
+  left: 0px;
 }
 .skillIcons div .active {
   background-color: #ed6a5a;
   color: white;
-  border-width: 2px;
-  font-weight: bold;
 }
 .skillIcons h3 {
   text-align: center;
@@ -118,10 +127,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white;
   display: inline-block;
   position: absolute;
+  left: -5px;
   display: none;
   padding: 10px;
   border-radius: 4px;
-  bottom: 105%;
+  bottom: 110%;
   border: 1px solid black;
   box-shadow: 5px 5px #5c6d70;
   width: 250%;
@@ -141,13 +151,13 @@ h1, h2, h3, h4, h5, h6 {
   position: relative;
   border: 1px solid black;
   box-shadow: none;
-  top: 5px;
-  left: 5px;
+  top: 0px;
+  left: 0px;
 }
 .skillIcons img:hover {
   box-shadow: 5px 5px #5c6d70;
-  top: 0;
-  left: 0;
+  top: -5px;
+  left: -5px;
   cursor: pointer;
 }
 .skillIcons img:active {
@@ -179,10 +189,11 @@ h1, h2, h3, h4, h5, h6 {
   background-color: white;
   display: inline-block;
   position: absolute;
+  left: -5px;
   display: none;
   padding: 10px;
   border-radius: 4px;
-  bottom: 105%;
+  bottom: 110%;
   border: 1px solid black;
   box-shadow: 5px 5px #5c6d70;
 }
@@ -223,6 +234,19 @@ h1, h2, h3, h4, h5, h6 {
   box-shadow: 5px 5px #5c6d70;
   left: -5px;
   bottom: -15px;
+}
+
+.footerText {
+  text-align: center;
+}
+.footerText span:first-of-type {
+  float: left;
+  position: absolute;
+  left: 20px;
+}
+.footerText span:last-of-type {
+  position: absolute;
+  right: 20px;
 }
 
 /*# sourceMappingURL=style.css.map */
