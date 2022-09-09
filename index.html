@@ -6,21 +6,30 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Thomas Codling</title>
         <link rel="stylesheet" href="./styles/style.css" />
-        <link rel="icon" type="image/x-icon" href="favicon.ico">
+        <link rel="icon" type="image/x-icon" href="favicon.ico" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css" integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+        <link
+            rel="stylesheet"
+            href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.0/css/all.min.css"
+            integrity="sha512-xh6O/CkQoPOWDdYTDqeRdPCVd1SpvCA9XXcUnZS2FmJNp1coAFzvtCN9BmamE+4aHK8yyUHUSCcJHgXloTyT2A=="
+            crossorigin="anonymous"
+            referrerpolicy="no-referrer"
+        />
         <script src="./scripts/script.js"></script>
         <script src="./scripts/particleground-master/jquery.particleground.min.js"></script>
         <script src="https://cdn.jsdelivr.net/npm/handlebars@latest/dist/handlebars.js"></script>
-        <script src="./scripts/skills.js" ></script>
 
+        <script src="./scripts/skills.js"></script>
+        <script src="./scripts/projects.js"></script>
     </head>
     <body>
         <div class="introSection">
             <h1>Thomas Codling - Full Stack Web Developer</h1>
             <!-- <h2>Full Stack Web Developer based in Auckland, NZ</h2> -->
             <p><i class="fa-solid fa-phone"></i> 022 045 3882</p>
-            <p><i class="fa-solid fa-envelope"></i> thomas.codling@outlook.com</p>
+            <p>
+                <i class="fa-solid fa-envelope"></i> thomas.codling@outlook.com
+            </p>
             <p>
                 I am a Web Developer currently based in Auckland, NZ. I love all
                 aspects of web development from creating pixel perfect user
@@ -32,197 +41,28 @@
         </div>
         <div id="skillContainer" class="skillIcons">
             <div>
-                <button><i class="fa-solid fa-grip"></i> All Tech</button>
+                <button class="active">
+                    <i class="fa-solid fa-grip"></i> All Tech
+                </button>
                 <button><i class="fa-solid fa-keyboard"></i> Languages</button>
                 <button><i class="fa-solid fa-computer"></i> Frameworks</button>
                 <button><i class="fa-solid fa-database"></i> Databases</button>
-                <button><i class="fa-solid fa-wrench"></i> Website Builders</button>
-                <button><i class="fa-solid fa-briefcase"></i> Workplace Tools</button>
-                <button><i class="fa-solid fa-file-pen"></i> Image Editors</button>
+                <button>
+                    <i class="fa-solid fa-wrench"></i> Website Builders
+                </button>
+                <button>
+                    <i class="fa-solid fa-briefcase"></i> Workplace Tools
+                </button>
+                <button>
+                    <i class="fa-solid fa-file-pen"></i> Image Editors
+                </button>
             </div>
-            <div class="highExperienceSkills"></div>
-            <div class="mediumExperienceSkills">
-                <div class="skillIcon">
-                    <div class="tooltip">
-                        <h5>Python</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://webflow.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip">
-                        <h5>Arduino</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://webflow.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original-wordmark.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip">
-                        <h5>Rasberry Pi</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://webflow.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/raspberrypi/raspberrypi-original-wordmark.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip">
-                        <h5>Wordpress</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://webflow.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/wordpress/wordpress-original.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip">
-                        <h5>Heroku</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://webflow.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/heroku/heroku-plain-wordmark.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip left">
-                        <h5>mongoDB</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://webflow.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original-wordmark.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip left">
-                        <h5>Gimp</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://webflow.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gimp/gimp-original-wordmark.svg"
-                    />
-                </div>
-                <div class="skillIcon">
-                    <div class="tooltip left">
-                        <h5>Gatsby</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula.
-                    </div>
-                    <img
-                        data-link="https://www.gatsbyjs.com/"
-                        src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-plain-wordmark.svg"
-                    />
-                </div>
-            </div>
+            <div class="skills"></div>
         </div>
 
-        <div class="exampleProjectsContainer">
+        <div class="projectsContainer">
             <h3>My Projects:</h3>
-            <div class="exampleProjects">
-                <div class="project">
-                    <div class="tooltip">
-                        <h5>Waiheke Aqua</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula. Phasellus tellus
-                        dolor, aliquet at sollicitudin id, pulvinar in nulla.
-                        Vestibulum auctor urna et dolor accumsan, nec sagittis
-                        nunc ullamcorper.
-                    </div>
-                    <img src="./images/aquamockup.png" />
-                    <h3 class="projectName"><i class="fa-solid fa-droplet"></i> Waiheke Aqua</h3>
-                </div>
-                <div class="project">
-                    <div class="tooltip">
-                        <h5>Mike Morgan Art</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula. Phasellus tellus
-                        dolor, aliquet at sollicitudin id, pulvinar in nulla.
-                        Vestibulum auctor urna et dolor accumsan, nec sagittis
-                        nunc ullamcorper.
-                    </div>
-                    <img src="./images/mikemockup.png" />
-                    <h3 class="projectName"><i class="fa-solid fa-palette"></i> Mike Morgan Art</h3>
-                </div>
-                <div class="project">
-                    <div class="tooltip">
-                        <h5>Crosstrees Chalet</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula. Phasellus tellus
-                        dolor, aliquet at sollicitudin id, pulvinar in nulla.
-                        Vestibulum auctor urna et dolor accumsan, nec sagittis
-                        nunc ullamcorper.
-                    </div>
-                    <img src="./images/crosstreesmockup.png" />
-                    <h3 class="projectName"><i class="fa-solid fa-house"></i> Crosstrees Chalet</h3>
-                </div>
-                <div class="project">
-                    <div class="tooltip">
-                        <h5>Find your food</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula. Phasellus tellus
-                        dolor, aliquet at sollicitudin id, pulvinar in nulla.
-                        Vestibulum auctor urna et dolor accumsan, nec sagittis
-                        nunc ullamcorper.
-                    </div>
-                    <img src="./images/mikemockup.png" />
-                    <h3 class="projectName"><i class="fa-solid fa-utensils"></i> Find Your Food</h3>
-                </div>
-                <div class="project">
-                    <div class="tooltip">
-                        <h5>React Minigames</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula. Phasellus tellus
-                        dolor, aliquet at sollicitudin id, pulvinar in nulla.
-                        Vestibulum auctor urna et dolor accumsan, nec sagittis
-                        nunc ullamcorper.
-                    </div>
-                    <img src="./images/mikemockup.png" />
-                    <h3 class="projectName"><i class="fa-solid fa-gamepad"></i> React Minigames</h3>
-                </div>
-                <div class="project">
-                    <div class="tooltip">
-                        <h5>Life Manager</h5>
-                        Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-                        Sed at nibh lectus. Integer consectetur massa non libero
-                        consectetur fermentum sed at ligula. Phasellus tellus
-                        dolor, aliquet at sollicitudin id, pulvinar in nulla.
-                        Vestibulum auctor urna et dolor accumsan, nec sagittis
-                        nunc ullamcorper.
-                    </div>
-                    <img src="./images/mikemockup.png" />
-                    <h3 class="projectName"><i class="fa-solid fa-person"></i> Life Manager</h3>
-                </div>
-            </div>
+            <div class="projects"></div>
         </div>
         <p>Website made by me using HTML/SCSS/JS/JQUERY</p>
     </body>

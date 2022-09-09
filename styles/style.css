@@ -39,7 +39,9 @@ h1, h2, h3, h4, h5, h6 {
 }
 .skillIcons div {
   position: relative;
+  display: flex;
   text-align: center;
+  justify-content: center;
 }
 .skillIcons div button {
   background-color: white;
@@ -47,8 +49,19 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid black;
   border-radius: 4px;
   font-family: "Space Mono", monospace;
-  font-weight: bold;
   font-size: medium;
+  margin: 0 10px;
+}
+.skillIcons div button:hover {
+  border-width: 2px;
+  cursor: pointer;
+  font-weight: bold;
+}
+.skillIcons div .active {
+  background-color: #ed6a5a;
+  color: white;
+  border-width: 2px;
+  font-weight: bold;
 }
 .skillIcons h3 {
   text-align: center;
@@ -67,16 +80,12 @@ h1, h2, h3, h4, h5, h6 {
   margin-left: 5px;
   margin-bottom: 10px;
 }
-.skillIcons .highExperienceSkills {
+.skillIcons .skills {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   position: relative;
-}
-.skillIcons .mediumExperienceSkills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  margin-top: 20px;
 }
 .skillIcons .tooltip {
   background-color: white;
@@ -120,14 +129,14 @@ h1, h2, h3, h4, h5, h6 {
   left: 5px;
 }
 
-.exampleProjectsContainer {
+.projectsContainer {
   border-radius: 0 0 4px 4px;
   border-width: 0 1px 1px 1px;
   border-color: black;
   border-style: solid;
 }
 
-.exampleProjects, .exampleProjectsContainer {
+.projects, .projectsContainer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -135,11 +144,11 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 20px;
   padding: 20px;
 }
-.exampleProjects .project, .exampleProjectsContainer .project {
+.projects .project, .projectsContainer .project {
   width: 30%;
   position: relative;
 }
-.exampleProjects .project .tooltip, .exampleProjectsContainer .project .tooltip {
+.projects .project .tooltip, .projectsContainer .project .tooltip {
   background-color: white;
   display: inline-block;
   position: absolute;
@@ -150,10 +159,10 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid black;
   box-shadow: 5px 5px #5c6d70;
 }
-.exampleProjects .project .tooltip h5, .exampleProjectsContainer .project .tooltip h5 {
+.projects .project .tooltip h5, .projectsContainer .project .tooltip h5 {
   margin: 0;
 }
-.exampleProjects .project img, .exampleProjectsContainer .project img {
+.projects .project img, .projectsContainer .project img {
   width: 80%;
   border-radius: 4px;
   transition: box-shadow 0.5s, top 0.5s, left 0.5s;
@@ -165,7 +174,7 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   cursor: pointer;
 }
-.exampleProjects .project .projectName, .exampleProjectsContainer .project .projectName {
+.projects .project .projectName, .projectsContainer .project .projectName {
   border-radius: 4px;
   transition: box-shadow 0.5s, bottom 0.5s, left 0.5s;
   position: absolute;
@@ -179,11 +188,11 @@ h1, h2, h3, h4, h5, h6 {
   margin-bottom: 20px;
   border: 1px solid black;
 }
-.exampleProjects .project img:hover, .exampleProjectsContainer .project img:hover {
+.projects .project img:hover, .projectsContainer .project img:hover {
   top: 0;
   left: 0;
 }
-.exampleProjects .project img:hover + .projectName, .exampleProjectsContainer .project img:hover + .projectName {
+.projects .project img:hover + .projectName, .projectsContainer .project img:hover + .projectName {
   box-shadow: 5px 5px #5c6d70;
   left: -5px;
   bottom: -15px;

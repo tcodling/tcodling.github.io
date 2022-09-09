@@ -3,28 +3,14 @@ const tooltipTransition = {
     easing: "swing",
 };
 
-// const techSkills = [
-//     {
-//         name: "HTML",
-//         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/html5/html5-original-wordmark.svg",
-//         tooltip: "Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. Integer consectetur massa non libero consectetur fermentum sed at ligula.",
-//         link: "",
-//     },
-// ];
-
 $(document).ready(function () {
-    // if ($(location).attr("href") == "https://tcodling.github.io/") {
-    //     $("body").hide();
-    //     alert(
-    //         "This website is currently being built! Send me an email at thomas.codling@outlook.com for business inquiries!"
-    //     );
-    // }
-
     techSkills.forEach((skill) => {
-        $(".highExperienceSkills").append(`<div class="skillIcon">
+        $(".skills").append(`<div class="skillIcon">
             <div class="tooltip">
                 <h5>${skill.name}</h5>
                 ${skill.tooltip}
+                <br/>
+                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
             <img
                 data-link="${skill.link}"
@@ -33,8 +19,21 @@ $(document).ready(function () {
         </div>`);
     });
 
+    projects.forEach((project) => {
+        $(".projects").append(`
+            <div class="project">
+                <div class="tooltip">
+                    <h5>${project.name}</h5>
+                    ${project.tooltip}
+                </div>
+                <img src="${project.image}" />
+                <h3 class="projectName">${project.icon} ${project.name}</h3>
+            </div>
+        `)
+    });
+
     // SHOW TOOLTIP ON ICON HOVER
-    $(".skillIcons .skillIcon img, .exampleProjects .project img").hover(
+    $(".skillIcons .skillIcon img, .projects .project img").hover(
         (e) => {
             $(e.target).parent().children(".tooltip").show(tooltipTransition);
         },
@@ -43,7 +42,7 @@ $(document).ready(function () {
         }
     );
 
-    $(".skillIcons .skillIcon img, .exampleProjects .project img").click(
+    $(".skillIcons .skillIcon img, .projects .project img").click(
         (e) => {
             // console.log("hello");
             // var url = e.target.getAttribute("data-link");
@@ -64,5 +63,4 @@ $(document).ready(function () {
         dotColor: "#ed6a5a",
         lineColor: "#ed6a5a",
     });
-
 });

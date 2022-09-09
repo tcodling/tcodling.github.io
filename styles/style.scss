@@ -81,15 +81,31 @@ h1, h2, h3, h4, h5, h6 {
 
     div {
         position: relative;
+        display: flex;
         text-align: center;
+        justify-content: center;
         button {
             background-color: white;
             padding: 10px;
             border: 1px solid black;
             border-radius: 4px;
             font-family: "Space Mono", monospace;
-            font-weight: bold;
+            // font-weight: bold;
             font-size: medium;
+            margin: 0 10px;
+            &:hover {
+                border-width: 2px;
+                cursor: pointer;
+                font-weight: bold;
+            }
+        }
+
+        .active {
+            background-color: #ed6a5a;
+            color: white;
+            border-width: 2px;
+            font-weight: bold;
+
         }
     }
 
@@ -104,6 +120,7 @@ h1, h2, h3, h4, h5, h6 {
         top: 0;
         left: 0;
         height: 100%;
+        // width: 100%;
     }
 
     .skillIcon {
@@ -115,18 +132,12 @@ h1, h2, h3, h4, h5, h6 {
         margin-bottom: 10px;
     }
 
-    .highExperienceSkills {
+    .skills {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
         position: relative;
-        // top: 500px;
-    }
-
-    .mediumExperienceSkills {
-        display: flex;
-        flex-wrap: wrap;
-        justify-content: center;
+        margin-top: 20px;
     }
 
     .tooltip {
@@ -170,14 +181,14 @@ h1, h2, h3, h4, h5, h6 {
     }
 }
 
-.exampleProjectsContainer {
+.projectsContainer {
     border-radius: 0 0 4px 4px;
     border-width: 0 1px 1px 1px;
     border-color: black;
     border-style: solid;
 }
 
-.exampleProjects, .exampleProjectsContainer {
+.projects, .projectsContainer {
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
