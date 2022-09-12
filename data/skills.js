@@ -14,7 +14,8 @@ const techSkills = [
             designed to be displayed in a web browser. It can be assisted by technologies such as 
             Cascading Style Sheets (CSS) and scripting languages such as JavaScript.`,
         link: "",
-        tag: LANGUAGE
+        tag: LANGUAGE,
+        rating: 5
     },
     {
         name: "CSS",
@@ -23,7 +24,8 @@ const techSkills = [
             presentation of a document written in a markup language such as HTML or XML. CSS is a cornerstone
             technology of the World Wide Web, alongside HTML and JavaScript`,
         link: "https://developer.mozilla.org/en-US/docs/Web/CSS",
-        tag: LANGUAGE
+        tag: LANGUAGE,
+        rating: 5
     },
     {
         name: "Javascript",
@@ -34,7 +36,8 @@ const techSkills = [
             third-party libraries. All major web browsers have a dedicated JavaScript engine to execute 
             the code on users' devices.`,
         link: "https://developer.mozilla.org/en-US/docs/Web/JavaScript",
-        tag: LANGUAGE
+        tag: LANGUAGE,
+        rating: 4
     },
     {
         name: "PHP",
@@ -64,16 +67,16 @@ const techSkills = [
     {
         name: "Sass",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/sass/sass-original.svg",
-        tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
-            Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
+        tooltip: `Sass (short for syntactically awesome style sheets) is a preprocessor scripting 
+            language that is interpreted or compiled into Cascading Style Sheets (CSS). SassScript is the scripting language itself.`,
         link: "",
         tag: FRAMEWORK
     },
     {
         name: "Bootstrap",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/bootstrap/bootstrap-original-wordmark.svg",
-        tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
-            Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
+        tooltip: `Bootstrap is a free and open-source CSS framework directed at responsive, mobile-first 
+            front-end web development. It contains HTML, CSS and (optionally) JavaScript-based design templates for typography, forms, buttons, navigation, and other interface components.`,
         link: "",
         tag: FRAMEWORK
     },
@@ -88,8 +91,7 @@ const techSkills = [
     {
         name: "React",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/react/react-original-wordmark.svg",
-        tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
-            Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
+        tooltip: `React (also known as React.js or ReactJS) is a free and open-source front-end JavaScript library[3] for building user interfaces based on UI components.`,
         link: "",
         tag: FRAMEWORK
     },
@@ -112,16 +114,15 @@ const techSkills = [
     {
         name: "Webflow",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/webflow/webflow-original.svg",
-        tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
-            Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
+        tooltip: `Webflow is a SaaS application that allows designers to build responsive websites
+         with browser-based visual editing software.[1] While designers use the tool, Webflow automatically generates HTML, CSS, and JavaScript.`,
         link: "",
         tag: BUILDER
     },
     {
         name: "Figma",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/figma/figma-original.svg",
-        tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
-            Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
+        tooltip: `Figma is a collaborative web application for interface design`,
         link: "",
         tag: IMAGE
     },
@@ -230,6 +231,14 @@ const techSkills = [
     {
         name: "Express",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/express/express-original-wordmark.svg",
+        tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
+            Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
+        link: "",
+        tag: FRAMEWORK
+    },
+    {
+        name: "Three.js",
+        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/threejs/threejs-original-wordmark.svg",
         tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed at nibh lectus. 
             Integer consectetur massa non libero consectetur fermentum sed at ligula.`,
         link: "",

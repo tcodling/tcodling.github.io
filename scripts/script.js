@@ -5,12 +5,12 @@ const tooltipTransition = {
 
 $(document).ready(function () {
     techSkills.forEach((skill) => {
+        const star = '<i class="fa-solid fa-star"></i>'
+
         $(".skills").append(`<div data-tag="${skill.tag}" class="skillIcon">
             <div class="tooltip">
                 <h5>${skill.name}</h5>
                 ${skill.tooltip}
-                <br/>
-                <i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i><i class="fa-solid fa-star"></i>
             </div>
             <img
                 data-link="${skill.link}"
@@ -49,7 +49,10 @@ $(document).ready(function () {
             }, 1000)
             // $(`.skillIcon[data-tag="${categoryId}"]`).fadeIn(1000);
         } else {
-            $(".skillIcon").fadeIn(animationSpeed);
+            setTimeout(e => {
+                $(".skillIcon").fadeIn(animationSpeed);
+            }, 1000)
+            
         }
 
     });
