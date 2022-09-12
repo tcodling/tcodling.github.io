@@ -2,11 +2,6 @@
 /* font-family: 'Major Mono Display', monospace;
 font-family: 'Space Mono', monospace;
 font-family: 'VT323', monospace; */
-.alertMessage {
-  color: red;
-  text-decoration: underline;
-}
-
 body {
   font-family: "Space Mono", monospace;
   margin: 20px;
@@ -19,21 +14,30 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "Space Mono", monospace;
+  font-family: "Major Mono Display", monospace;
+}
+
+.section {
+  padding: 20px;
+  border: 1px solid black;
+  position: relative;
 }
 
 .introSection {
   background-color: #ed6a5a;
   color: #fffcf2;
-  padding: 20px;
   border-width: 1px 1px 0 1px;
-  border-color: black;
-  border-style: solid;
-  position: relative;
   border-radius: 4px 4px 0 0;
 }
 .introSection h1 {
   margin-top: 0;
+}
+.introSection h3 {
+  margin-bottom: 40px;
+}
+.introSection p {
+  margin: 0;
+  padding-bottom: 10px;
 }
 .introSection .contactCard {
   position: absolute;
@@ -41,7 +45,7 @@ h6 {
   right: 20px;
   top: 20px;
   font-size: large;
-  border: 1px black solid;
+  border: 1px solid black;
   padding: 10px;
   border-radius: 4px;
   background-color: #fffcf2;
@@ -56,25 +60,21 @@ h6 {
   width: 20px;
   text-align: center;
 }
-.introSection p {
-  margin: 0;
-  padding-bottom: 10px;
-}
 
-.skillIcons {
+.skillsContainer {
   background-color: #fffcf2;
-  padding: 30px 20px;
-  border: 1px black solid;
-  position: relative;
   height: 80vh;
 }
-.skillIcons div {
+.skillsContainer h2 {
+  text-align: center;
+}
+.skillsContainer .buttons {
   position: relative;
   display: flex;
   text-align: center;
   justify-content: center;
 }
-.skillIcons div button {
+.skillsContainer .buttons button {
   background-color: white;
   padding: 10px;
   border: 1px solid black;
@@ -87,25 +87,22 @@ h6 {
   top: 0;
   left: 0;
 }
-.skillIcons div button:hover {
+.skillsContainer .buttons button:hover {
   cursor: pointer;
   box-shadow: 5px 5px #5c6d70;
   top: -5px;
   left: -5px;
 }
-.skillIcons div button:focus {
+.skillsContainer .buttons button:focus {
   box-shadow: none;
   top: 0px;
   left: 0px;
 }
-.skillIcons div .active {
+.skillsContainer .buttons button.active {
   background-color: #ed6a5a;
-  color: white;
+  color: #fffcf2;
 }
-.skillIcons h3 {
-  text-align: center;
-}
-.skillIcons .pg-canvas {
+.skillsContainer .pg-canvas {
   opacity: 0;
   position: absolute;
   top: 0;
@@ -113,7 +110,14 @@ h6 {
   width: 100%;
   height: 100%;
 }
-.skillIcons .skillIcon {
+.skillsContainer .skills {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  position: relative;
+  margin-top: 20px;
+}
+.skillsContainer .skills .skillIcon {
   display: inline-block;
   position: relative;
   width: 8%;
@@ -121,14 +125,7 @@ h6 {
   margin-left: 5px;
   margin-bottom: 10px;
 }
-.skillIcons .skills {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-  position: relative;
-  margin-top: 20px;
-}
-.skillIcons .tooltip {
+.skillsContainer .skills .skillIcon .tooltip {
   background-color: white;
   display: inline-block;
   position: absolute;
@@ -142,14 +139,14 @@ h6 {
   width: 250%;
   text-align: left;
 }
-.skillIcons .tooltip h5 {
+.skillsContainer .skills .skillIcon .tooltip h5 {
   margin: 0;
 }
-.skillIcons .tooltip.left {
+.skillsContainer .skills .skillIcon .tooltip.left {
   right: 5px;
   left: initial;
 }
-.skillIcons img {
+.skillsContainer .skills .skillIcon .skillImage {
   background-color: white;
   padding: 10px;
   border-radius: 4px;
@@ -160,41 +157,31 @@ h6 {
   top: 0px;
   left: 0px;
 }
-.skillIcons img:hover {
+.skillsContainer .skills .skillIcon .skillImage:hover {
   box-shadow: 5px 5px #5c6d70;
   top: -5px;
   left: -5px;
   cursor: pointer;
 }
-.skillIcons img:active {
+.skillsContainer .skills .skillIcon .skillImage:active {
   box-shadow: none;
   top: 5px;
   left: 5px;
 }
 
-.projectsContainer {
+.projects {
+  background-color: #ed6a5a;
   border-radius: 0 0 4px 4px;
   border-width: 0 1px 1px 1px;
-  border-color: black;
-  border-style: solid;
-}
-
-.projects,
-.projectsContainer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  background-color: #ed6a5a;
-  padding-bottom: 20px;
-  padding: 20px;
 }
-.projects .project,
-.projectsContainer .project {
+.projects .project {
   width: 30%;
   position: relative;
 }
-.projects .project .tooltip,
-.projectsContainer .project .tooltip {
+.projects .project .tooltip {
   background-color: white;
   display: inline-block;
   position: absolute;
@@ -206,12 +193,10 @@ h6 {
   border: 1px solid black;
   box-shadow: 5px 5px #5c6d70;
 }
-.projects .project .tooltip h5,
-.projectsContainer .project .tooltip h5 {
+.projects .project .tooltip h5 {
   margin: 0;
 }
-.projects .project img,
-.projectsContainer .project img {
+.projects .project .projectImage {
   width: 80%;
   border-radius: 4px;
   transition: box-shadow 0.5s, top 0.5s, left 0.5s;
@@ -223,8 +208,7 @@ h6 {
   margin: 0;
   cursor: pointer;
 }
-.projects .project .projectName,
-.projectsContainer .project .projectName {
+.projects .project .projectName {
   border-radius: 4px;
   transition: box-shadow 0.5s, bottom 0.5s, left 0.5s;
   position: absolute;
@@ -237,14 +221,14 @@ h6 {
   margin-top: 0;
   margin-bottom: 20px;
   border: 1px solid black;
+  font-family: "Space Mono", monospace;
+  font-weight: normal;
 }
-.projects .project img:hover,
-.projectsContainer .project img:hover {
+.projects .project .projectImage:hover {
   top: 0;
   left: 0;
 }
-.projects .project img:hover + .projectName,
-.projectsContainer .project img:hover + .projectName {
+.projects .project .projectImage:hover + .projectName {
   box-shadow: 5px 5px #5c6d70;
   left: -5px;
   bottom: -15px;

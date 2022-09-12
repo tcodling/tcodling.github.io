@@ -1,0 +1,259 @@
+@import "variables";
+
+body {
+    font-family: $bodyFont;
+    margin: 20px;
+    caret-color: transparent;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: $headingFont;
+}
+
+.section {
+    padding: $sectionPadding;
+    border: $standardBorder;
+    position: relative;
+
+}
+
+// INTRO SECTION ===========================================
+.introSection {
+    background-color: $themeColor1;
+    color: $themeColor2;
+    border-width: $standardBorderWidth $standardBorderWidth 0 $standardBorderWidth;
+    border-radius: $standardRadius $standardRadius 0 0;
+
+    h1 {
+        margin-top: 0;
+    }
+
+    h3 {
+        margin-bottom: 40px;
+    }
+
+    p {
+        margin: 0;
+        padding-bottom: 10px;
+    }
+
+    .contactCard {
+        position: absolute;
+        text-align: right;
+        right: $sectionPadding;
+        top: $sectionPadding;
+        font-size: large;
+        border: $standardBorder;
+        padding: 10px;
+        border-radius: $standardRadius;
+        background-color: $themeColor2;
+        color: $themeColorDark;
+
+        p {
+            padding: 0;
+        }
+
+        i {
+            margin-left: 10px;
+            display: inline-block;
+            width: 20px;
+            text-align: center;
+        }
+    }
+}
+
+// SKILL SECTION ===========================================
+.skillsContainer {
+    background-color: $themeColor2;
+    height: 80vh;
+
+    h2 {
+        text-align: center;
+    }
+
+    .buttons {
+        position: relative;
+        display: flex;
+        text-align: center;
+        justify-content: center;
+
+        button {
+            background-color: white;
+            padding: 10px;
+            border: $standardBorder;
+            border-radius: $standardRadius;
+            font-family: $bodyFont;
+            font-size: medium;
+            margin: 10px 10px;
+            transition: box-shadow 0.5s, top 0.5s, left 0.5s,
+                background-color 0.5s;
+            position: relative;
+            top: 0;
+            left: 0;
+
+            &:hover {
+                cursor: pointer;
+                box-shadow: $standardShadow;
+                top: -5px;
+                left: -5px;
+            }
+
+            &:focus {
+                box-shadow: none;
+                top: 0px;
+                left: 0px;
+            }
+
+            &.active {
+                background-color: $themeColor1;
+                color: $themeColor2;
+            }
+        }
+    }
+
+    .pg-canvas {
+        opacity: 0;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+
+    .skills {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        position: relative;
+        margin-top: 20px;
+
+        .skillIcon {
+            display: inline-block;
+            position: relative;
+            width: 8%;
+            margin-right: 10px;
+            margin-left: 5px;
+            margin-bottom: 10px;
+
+            .tooltip {
+                @include basic-tooltip;
+                width: 250%;
+                text-align: left;
+            }
+
+            .tooltip.left {
+                right: 5px;
+                left: initial;
+            }
+
+            .skillImage {
+                background-color: white;
+                padding: 10px;
+                border-radius: $standardRadius;
+                transition: box-shadow 0.5s, top 0.5s, left 0.5s,
+                    background-color 0.5s;
+                position: relative;
+                border: $standardBorder;
+
+                box-shadow: none;
+                top: 0px;
+                left: 0px;
+            }
+
+            .skillImage:hover {
+                box-shadow: $standardShadow;
+                top: -$shadowThickness;
+                left: -$shadowThickness;
+                cursor: pointer;
+            }
+
+            .skillImage:active {
+                box-shadow: none;
+                top: $shadowThickness;
+                left: $shadowThickness;
+            }
+        }
+    }
+}
+
+// PROJECTS SECTION ===========================================
+
+.projects {
+    background-color: $themeColor1;
+    border-radius: 0 0 $standardRadius $standardRadius;
+    border-width: 0 $standardBorderWidth $standardBorderWidth $standardBorderWidth;
+
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+
+    .project {
+        width: 30%;
+        position: relative;
+
+        .tooltip {
+            @include basic-tooltip;
+        }
+
+        .projectImage {
+            width: 80%;
+            border-radius: $standardRadius;
+            transition: box-shadow 0.5s, top 0.5s, left 0.5s;
+            position: relative;
+            padding: 20px;
+            box-shadow: none;
+            top: 5px;
+            left: 5px;
+            margin: 0;
+            cursor: pointer;
+        }
+
+        .projectName {
+            border-radius: $standardRadius;
+            transition: box-shadow 0.5s, bottom 0.5s, left 0.5s;
+            position: absolute;
+            box-shadow: none;
+            left: 0px;
+            bottom: -20px;
+            background-color: $themeColor2;
+            display: inline-block;
+            padding: 10px;
+            margin-top: 0;
+            margin-bottom: 20px;
+            border: $standardBorder;
+            font-family: $bodyFont;
+            font-weight: normal;
+        }
+
+        .projectImage:hover {
+            top: 0;
+            left: 0;
+        }
+
+        .projectImage:hover + .projectName {
+            box-shadow: $standardShadow;
+            left: -5px;
+            bottom: -15px;
+        }
+    }
+}
+
+// FOOTER SECTION ===========================================
+
+.footerText {
+    text-align: center;
+    span:first-of-type {
+        float: left;
+        position: absolute;
+        left: 20px;
+    }
+    span:last-of-type {
+        position: absolute;
+        right: 20px;
+    }
+}

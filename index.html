@@ -5,7 +5,7 @@
         <meta http-equiv="X-UA-Compatible" content="IE=edge" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <title>Thomas Codling</title>
-        <link rel="stylesheet" href="./styles/style.css" />
+        <link rel="stylesheet" href="./styles/css/style.css" />
         <link rel="icon" type="image/x-icon" href="favicon.ico" />
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
         <link
@@ -22,9 +22,9 @@
         <script src="./data/projects.js"></script>
     </head>
     <body>
-        <div class="introSection">
+        <div class="section introSection">
             <h1>Thomas Codling</h1>
-            <h1>Full Stack Web Developer</h1>
+            <h3>Full Stack Web Developer</h3>
             <div class="contactCard">
                 <p>022 045 3882<i class="fa-solid fa-phone"></i></p>
                 <p>thomas.codling@outlook.com<i class="fa-solid fa-envelope"></i></p>
@@ -39,15 +39,21 @@
                 me an email or give me a call using the details above.
             </p>
         </div>
-        <div id="skillContainer" class="skillIcons">
-            <h2 style="text-align: center">My Toolbox</h2>
-            <div>
+        <div id="skillContainer" class="section skillsContainer">
+            <h2>My Toolbox</h2>
+            <div class="buttons">
                 <button class="active">
                     <i class="fa-solid fa-grip"></i> All Tech
                 </button>
-                <button data-category="1"><i class="fa-solid fa-keyboard"></i> Languages</button>
-                <button data-category="2"><i class="fa-solid fa-computer"></i> Frameworks</button>
-                <button data-category="3"><i class="fa-solid fa-database"></i> Databases</button>
+                <button data-category="1">
+                    <i class="fa-solid fa-keyboard"></i> Languages
+                </button>
+                <button data-category="2">
+                    <i class="fa-solid fa-computer"></i> Frameworks
+                </button>
+                <button data-category="3">
+                    <i class="fa-solid fa-database"></i> Databases
+                </button>
                 <button data-category="4">
                     <i class="fa-solid fa-wrench"></i> Website Builders
                 </button>
@@ -61,9 +67,12 @@
             <div class="skills"></div>
         </div>
 
-        <div class="projectsContainer">
-            <div class="projects"></div>
-        </div>
-        <p class="footerText">Website made by me using HTML/SCSS/JS/JQUERY<span>Icons from FontAwesome</span><span>Definitions from Wikipedia</span></p>
+        <div class="section projects"></div>
+
+        <p class="footerText">
+            <span>Icons from FontAwesome</span>
+            Website made by me using HTML/SCSS/JS/JQUERY
+            <span>Definitions from Wikipedia</span>
+        </p>
     </body>
 </html>

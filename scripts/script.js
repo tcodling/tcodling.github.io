@@ -4,9 +4,10 @@ const tooltipTransition = {
 };
 
 $(document).ready(function () {
+    // DYNAMICALLY GENERATE SKILLS
     techSkills.forEach((skill) => {
-        const star = '<i class="fa-solid fa-star"></i>'
-        let direction = 'right'
+        const star = '<i class="fa-solid fa-star"></i>';
+        let direction = "right";
 
         $(".skills").append(`<div data-tag="${skill.tag}" class="skillIcon">
             <div class="tooltip ${direction}">
@@ -14,12 +15,14 @@ $(document).ready(function () {
                 ${skill.tooltip}
             </div>
             <img
+                class="skillImage"
                 data-link="${skill.link}"
                 src="${skill.icon}"
             />
         </div>`);
     });
 
+    // DYNAMICALLY GENERATE PROJECTS
     projects.forEach((project) => {
         $(".projects").append(`
             <div class="project">
@@ -27,44 +30,43 @@ $(document).ready(function () {
                     <h5>${project.name}</h5>
                     ${project.tooltip}
                 </div>
-                <img data-link="${project.link}" src="${project.image}" />
+                <img class="projectImage" data-link="${project.link}" src="${project.image}" />
                 <h3 class="projectName">${project.icon} ${project.name}</h3>
             </div>
         `);
     });
 
-    $(".project img").click(function(e) {
-        console.log($(e.target).data('link'))
-        window.open($(e.target).data('link'))
-    })
+    // PROJECT LINKS
+    $(".project img").click(function (e) {
+        window.open($(e.target).data("link"));
+    });
 
-    const state = 0;
-
-    $(".skillIcons button").click(function () {
+    // LOGIC FOR CHANGING TAB CATEGORIES
+    $(".skillsContainer button").click(function () {
         // STYLE THE ACTIVE BUTTON
-        $(".skillIcons button").removeClass("active");
+        $(".skillsContainer button").removeClass("active");
         $(this).addClass("active");
 
         // SHOW ICON BASED ON BUTTON CATEGORY NUMBER 1-6
-        const animationSpeed = 750
-        $(".skillIcon").fadeOut(animationSpeed);
-        const categoryId = $(this).data("category")
-        if (categoryId) {
-            setTimeout(e => {
-                $(`.skillIcon[data-tag="${categoryId}"]`).fadeIn(animationSpeed);
-            }, 1000)
-            // $(`.skillIcon[data-tag="${categoryId}"]`).fadeIn(1000);
-        } else {
-            setTimeout(e => {
-                $(".skillIcon").fadeIn(animationSpeed);
-            }, 1000)
-            
-        }
+        const animationSpeed = 750;
 
+        $(".skillIcon").fadeOut(animationSpeed);
+        const categoryId = $(this).data("category");
+        if (categoryId) {
+            setTimeout((e) => {
+                $(`.skillIcon[data-tag="${categoryId}"]`).fadeIn(
+                    animationSpeed
+                );
+            }, 1000);
+        } else {
+            setTimeout((e) => {
+                $(".skillIcon").fadeIn(animationSpeed);
+            }, 1000);
+        }
     });
 
     // SHOW TOOLTIP ON ICON HOVER
-    $(".skillIcons .skillIcon img, .projects .project img").hover(
+    $(".skillsContainer .skillIcon img, .projects .project img").hover(
         (e) => {
             $(e.target).parent().children(".tooltip").show(tooltipTransition);
         },
@@ -73,11 +75,8 @@ $(document).ready(function () {
         }
     );
 
-    $(".skillIcons .skillIcon img, .projects .project img").click((e) => {
-        // console.log("hello");
-        // var url = e.target.getAttribute("data-link");
-        // $(location).prop("href", url);
-
+    // SKILL LINKS
+    $(".skillsContainer .skillIcon img, .projects .project img").click((e) => {
         var win = window.open(e.target.getAttribute("data-link"), "_blank");
         if (win) {
             //Browser has allowed it to be opened
@@ -88,20 +87,14 @@ $(document).ready(function () {
         }
     });
 
+    // START ANIMATED BACKGROUND
     setTimeout(function () {
-        console.log("funciton go");
         $("#skillContainer").particleground({
             dotColor: "#ed6a5a",
             lineColor: "#ed6a5a",
             parallaxMultiplier: 20,
-            // curvedLines: 'true'
         });
         $(".pg-canvas").animate({ opacity: 1 }, 2000);
     }, 1000);
 
-    // $("#skillContainer").particleground({
-    //     dotColor: "#ed6a5a",
-    //     lineColor: "#ed6a5a",
-    //     // curvedLines: 'true'
-    // });
 });

@@ -1,0 +1,43 @@
+@import url("https://fonts.googleapis.com/css2?family=Major+Mono+Display&family=Space+Mono&family=VT323&display=swap");
+
+
+/* font-family: 'Major Mono Display', monospace;
+font-family: 'Space Mono', monospace;
+font-family: 'VT323', monospace; */
+
+// colour scheme : FFC4EB EAEFD3 ED6A5A 363636
+
+// original box shadow 5c6d70
+
+$headingFont: "Major Mono Display", monospace;
+$bodyFont: "Space Mono", monospace;
+
+$sectionPadding: 20px;
+
+$themeColor1: #ed6a5a;
+$themeColor2: #fffcf2;
+$themeColorDark: black;
+
+$standardBorderWidth: 1px;
+$standardBorder: $standardBorderWidth solid $themeColorDark;
+$standardRadius: 4px;
+
+$standardShadow: 5px 5px #5c6d70;
+$shadowThickness: 5px;
+
+
+@mixin basic-tooltip {
+    background-color: white;
+    display: inline-block;
+    position: absolute;
+    left: -$shadowThickness;
+    display: none;
+    padding: 10px;
+    border-radius: 4px;
+    bottom: 110%;
+    border: $standardBorder;
+    box-shadow: $shadowThickness $shadowThickness #5c6d70;
+    h5 {
+        margin: 0;
+    }
+}
