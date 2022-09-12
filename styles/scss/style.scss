@@ -4,6 +4,7 @@ body {
     font-family: $bodyFont;
     margin: 20px;
     caret-color: transparent;
+    background-color: $themeColor2;
 }
 
 h1,
@@ -69,11 +70,12 @@ h6 {
 
 // SKILL SECTION ===========================================
 .skillsContainer {
-    background-color: $themeColor2;
+    background-color: $themeColorDark;
     height: 80vh;
 
     h2 {
         text-align: center;
+        color: $themeColor2;
     }
 
     .buttons {
@@ -83,7 +85,7 @@ h6 {
         justify-content: center;
 
         button {
-            background-color: white;
+            background-color: $themeColor2;
             padding: 10px;
             border: $standardBorder;
             border-radius: $standardRadius;
@@ -152,7 +154,7 @@ h6 {
             }
 
             .skillImage {
-                background-color: white;
+                background-color: $themeColor2;
                 padding: 10px;
                 border-radius: $standardRadius;
                 transition: box-shadow 0.5s, top 0.5s, left 0.5s,

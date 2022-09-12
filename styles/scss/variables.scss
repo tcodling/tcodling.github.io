@@ -27,7 +27,7 @@ $shadowThickness: 5px;
 
 
 @mixin basic-tooltip {
-    background-color: white;
+    background-color: $themeColor2;
     display: inline-block;
     position: absolute;
     left: -$shadowThickness;

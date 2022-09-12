@@ -6,7 +6,6 @@ body {
   font-family: "Space Mono", monospace;
   margin: 20px;
   caret-color: transparent;
-  background-color: #fffcf2;
 }
 
 h1,
@@ -68,7 +67,6 @@ h6 {
 }
 .skillsContainer h2 {
   text-align: center;
-  color: #fffcf2;
 }
 .skillsContainer .buttons {
   position: relative;
@@ -77,7 +75,7 @@ h6 {
   justify-content: center;
 }
 .skillsContainer .buttons button {
-  background-color: #fffcf2;
+  background-color: white;
   padding: 10px;
   border: 1px solid black;
   border-radius: 4px;
@@ -128,7 +126,7 @@ h6 {
   margin-bottom: 10px;
 }
 .skillsContainer .skills .skillIcon .tooltip {
-  background-color: #fffcf2;
+  background-color: white;
   display: inline-block;
   position: absolute;
   left: -5px;
@@ -149,7 +147,7 @@ h6 {
   left: initial;
 }
 .skillsContainer .skills .skillIcon .skillImage {
-  background-color: #fffcf2;
+  background-color: white;
   padding: 10px;
   border-radius: 4px;
   transition: box-shadow 0.5s, top 0.5s, left 0.5s, background-color 0.5s;
@@ -184,7 +182,7 @@ h6 {
   position: relative;
 }
 .projects .project .tooltip {
-  background-color: #fffcf2;
+  background-color: white;
   display: inline-block;
   position: absolute;
   left: -5px;
