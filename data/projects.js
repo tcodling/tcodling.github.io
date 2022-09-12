@@ -8,7 +8,8 @@ const projects = [
             Vestibulum auctor urna et dolor accumsan, nec sagittis
             nunc ullamcorper.`,
         image: "./images/aquamockup.png",
-        icon: '<i class="fa-solid fa-droplet"></i>'
+        icon: '<i class="fa-solid fa-droplet"></i>',
+        link: "https://waihekeaqua.co.nz/"
     },
     {
         name: "Mike Morgan Art",
@@ -19,7 +20,8 @@ const projects = [
             Vestibulum auctor urna et dolor accumsan, nec sagittis
             nunc ullamcorper.`,
         image: "./images/mikemockup.png",
-        icon: '<i class="fa-solid fa-palette"></i>'
+        icon: '<i class="fa-solid fa-palette"></i>',
+        link: "https://www.mikemorganart.com/"
     },
     {
         name: "Crosstrees Chalet",
@@ -30,50 +32,51 @@ const projects = [
             Vestibulum auctor urna et dolor accumsan, nec sagittis
             nunc ullamcorper.`,
         image: "./images/crosstreesmockup.png",
-        icon: '<i class="fa-solid fa-house"></i>'
+        icon: '<i class="fa-solid fa-house"></i>',
+        link: "https://www.hitapabay.co.nz/"
     },
-    {
-        name: "Find Your Food",
-        tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed at nibh lectus. Integer consectetur massa non libero
-            consectetur fermentum sed at ligula. Phasellus tellus
-            dolor, aliquet at sollicitudin id, pulvinar in nulla.
-            Vestibulum auctor urna et dolor accumsan, nec sagittis
-            nunc ullamcorper.`,
-        image: "./images/aquamockup.png",
-        icon: '<i class="fa-solid fa-utensils"></i>'
-    },
-    {
-        name: "React Minigames",
-        tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed at nibh lectus. Integer consectetur massa non libero
-            consectetur fermentum sed at ligula. Phasellus tellus
-            dolor, aliquet at sollicitudin id, pulvinar in nulla.
-            Vestibulum auctor urna et dolor accumsan, nec sagittis
-            nunc ullamcorper.`,
-        image: "./images/aquamockup.png",
-        icon: '<i class="fa-solid fa-gamepad"></i>'
-    },
-    {
-        name: "Life Manager",
-        tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed at nibh lectus. Integer consectetur massa non libero
-            consectetur fermentum sed at ligula. Phasellus tellus
-            dolor, aliquet at sollicitudin id, pulvinar in nulla.
-            Vestibulum auctor urna et dolor accumsan, nec sagittis
-            nunc ullamcorper.`,
-        image: "./images/aquamockup.png",
-        icon: '<i class="fa-solid fa-person"></i>'
-    },
-    {
-        name: "3D Viewer",
-        tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-            Sed at nibh lectus. Integer consectetur massa non libero
-            consectetur fermentum sed at ligula. Phasellus tellus
-            dolor, aliquet at sollicitudin id, pulvinar in nulla.
-            Vestibulum auctor urna et dolor accumsan, nec sagittis
-            nunc ullamcorper.`,
-        image: "./images/aquamockup.png",
-        icon: '<i class="fa-solid fa-cube"></i>'
-    },
+    // {
+    //     name: "Find Your Food",
+    //     tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    //         Sed at nibh lectus. Integer consectetur massa non libero
+    //         consectetur fermentum sed at ligula. Phasellus tellus
+    //         dolor, aliquet at sollicitudin id, pulvinar in nulla.
+    //         Vestibulum auctor urna et dolor accumsan, nec sagittis
+    //         nunc ullamcorper.`,
+    //     image: "./images/aquamockup.png",
+    //     icon: '<i class="fa-solid fa-utensils"></i>'
+    // },
+    // {
+    //     name: "React Minigames",
+    //     tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    //         Sed at nibh lectus. Integer consectetur massa non libero
+    //         consectetur fermentum sed at ligula. Phasellus tellus
+    //         dolor, aliquet at sollicitudin id, pulvinar in nulla.
+    //         Vestibulum auctor urna et dolor accumsan, nec sagittis
+    //         nunc ullamcorper.`,
+    //     image: "./images/aquamockup.png",
+    //     icon: '<i class="fa-solid fa-gamepad"></i>'
+    // },
+    // {
+    //     name: "Life Manager",
+    //     tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    //         Sed at nibh lectus. Integer consectetur massa non libero
+    //         consectetur fermentum sed at ligula. Phasellus tellus
+    //         dolor, aliquet at sollicitudin id, pulvinar in nulla.
+    //         Vestibulum auctor urna et dolor accumsan, nec sagittis
+    //         nunc ullamcorper.`,
+    //     image: "./images/aquamockup.png",
+    //     icon: '<i class="fa-solid fa-person"></i>'
+    // },
+    // {
+    //     name: "3D Viewer",
+    //     tooltip: `Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+    //         Sed at nibh lectus. Integer consectetur massa non libero
+    //         consectetur fermentum sed at ligula. Phasellus tellus
+    //         dolor, aliquet at sollicitudin id, pulvinar in nulla.
+    //         Vestibulum auctor urna et dolor accumsan, nec sagittis
+    //         nunc ullamcorper.`,
+    //     image: "./images/aquamockup.png",
+    //     icon: '<i class="fa-solid fa-cube"></i>'
+    // },
 ]

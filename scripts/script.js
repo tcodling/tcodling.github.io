@@ -6,9 +6,10 @@ const tooltipTransition = {
 $(document).ready(function () {
     techSkills.forEach((skill) => {
         const star = '<i class="fa-solid fa-star"></i>'
+        let direction = 'right'
 
         $(".skills").append(`<div data-tag="${skill.tag}" class="skillIcon">
-            <div class="tooltip">
+            <div class="tooltip ${direction}">
                 <h5>${skill.name}</h5>
                 ${skill.tooltip}
             </div>
@@ -26,11 +27,16 @@ $(document).ready(function () {
                     <h5>${project.name}</h5>
                     ${project.tooltip}
                 </div>
-                <img src="${project.image}" />
+                <img data-link="${project.link}" src="${project.image}" />
                 <h3 class="projectName">${project.icon} ${project.name}</h3>
             </div>
         `);
     });
+
+    $(".project img").click(function(e) {
+        console.log($(e.target).data('link'))
+        window.open($(e.target).data('link'))
+    })
 
     const state = 0;
 

@@ -13,13 +13,18 @@ body {
   caret-color: transparent;
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Space Mono", monospace;
 }
 
 .introSection {
   background-color: #ed6a5a;
-  color: #FFFCF2;
+  color: #fffcf2;
   padding: 20px;
   border-width: 1px 1px 0 1px;
   border-color: black;
@@ -39,7 +44,7 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px black solid;
   padding: 10px;
   border-radius: 4px;
-  background-color: #FFFCF2;
+  background-color: #fffcf2;
   color: black;
 }
 .introSection .contactCard p {
@@ -57,7 +62,7 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 .skillIcons {
-  background-color: #FFFCF2;
+  background-color: #fffcf2;
   padding: 30px 20px;
   border: 1px black solid;
   position: relative;
@@ -141,7 +146,8 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
 }
 .skillIcons .tooltip.left {
-  right: 0;
+  right: 5px;
+  left: initial;
 }
 .skillIcons img {
   background-color: white;
@@ -173,7 +179,8 @@ h1, h2, h3, h4, h5, h6 {
   border-style: solid;
 }
 
-.projects, .projectsContainer {
+.projects,
+.projectsContainer {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
@@ -181,11 +188,13 @@ h1, h2, h3, h4, h5, h6 {
   padding-bottom: 20px;
   padding: 20px;
 }
-.projects .project, .projectsContainer .project {
+.projects .project,
+.projectsContainer .project {
   width: 30%;
   position: relative;
 }
-.projects .project .tooltip, .projectsContainer .project .tooltip {
+.projects .project .tooltip,
+.projectsContainer .project .tooltip {
   background-color: white;
   display: inline-block;
   position: absolute;
@@ -197,10 +206,12 @@ h1, h2, h3, h4, h5, h6 {
   border: 1px solid black;
   box-shadow: 5px 5px #5c6d70;
 }
-.projects .project .tooltip h5, .projectsContainer .project .tooltip h5 {
+.projects .project .tooltip h5,
+.projectsContainer .project .tooltip h5 {
   margin: 0;
 }
-.projects .project img, .projectsContainer .project img {
+.projects .project img,
+.projectsContainer .project img {
   width: 80%;
   border-radius: 4px;
   transition: box-shadow 0.5s, top 0.5s, left 0.5s;
@@ -212,25 +223,28 @@ h1, h2, h3, h4, h5, h6 {
   margin: 0;
   cursor: pointer;
 }
-.projects .project .projectName, .projectsContainer .project .projectName {
+.projects .project .projectName,
+.projectsContainer .project .projectName {
   border-radius: 4px;
   transition: box-shadow 0.5s, bottom 0.5s, left 0.5s;
   position: absolute;
   box-shadow: none;
   left: 0px;
   bottom: -20px;
-  background-color: #FFFCF2;
+  background-color: #fffcf2;
   display: inline-block;
   padding: 10px;
   margin-top: 0;
   margin-bottom: 20px;
   border: 1px solid black;
 }
-.projects .project img:hover, .projectsContainer .project img:hover {
+.projects .project img:hover,
+.projectsContainer .project img:hover {
   top: 0;
   left: 0;
 }
-.projects .project img:hover + .projectName, .projectsContainer .project img:hover + .projectName {
+.projects .project img:hover + .projectName,
+.projectsContainer .project img:hover + .projectName {
   box-shadow: 5px 5px #5c6d70;
   left: -5px;
   bottom: -15px;
