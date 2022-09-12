@@ -2,9 +2,10 @@
 
 body {
     font-family: $bodyFont;
-    margin: 20px;
+    margin: 0px;
     caret-color: transparent;
     background-color: $themeColor2;
+    overflow-x: hidden;
 }
 
 h1,
@@ -20,15 +21,15 @@ h6 {
     padding: $sectionPadding;
     border: $standardBorder;
     position: relative;
-
 }
 
 // INTRO SECTION ===========================================
 .introSection {
     background-color: $themeColor1;
     color: $themeColor2;
-    border-width: $standardBorderWidth $standardBorderWidth 0 $standardBorderWidth;
-    border-radius: $standardRadius $standardRadius 0 0;
+    border-width: $standardBorderWidth $standardBorderWidth 0
+        $standardBorderWidth;
+    // border-radius: $standardRadius $standardRadius 0 0;
 
     h1 {
         margin-top: 0;
@@ -75,6 +76,7 @@ h6 {
 
     h2 {
         text-align: center;
+        position: relative;
         color: $themeColor2;
     }
 
@@ -187,8 +189,8 @@ h6 {
 
 .projects {
     background-color: $themeColor1;
-    border-radius: 0 0 $standardRadius $standardRadius;
-    border-width: 0 $standardBorderWidth $standardBorderWidth $standardBorderWidth;
+    // border-radius: 0 0 $standardRadius $standardRadius;
+    // border-width: 0 $standardBorderWidth $standardBorderWidth $standardBorderWidth;
 
     display: flex;
     justify-content: center;
@@ -248,14 +250,32 @@ h6 {
 // FOOTER SECTION ===========================================
 
 .footerText {
-    text-align: center;
-    span:first-of-type {
-        float: left;
-        position: absolute;
-        left: 20px;
+    display: flex;
+    justify-content: space-around;
+
+    span {
+        display: inline-block;
     }
-    span:last-of-type {
-        position: absolute;
-        right: 20px;
-    }
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+    background: $themeColor2;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: $themeColorDark;
+    border: 1px white solid;
+    border-radius: $standardRadius;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
 }
