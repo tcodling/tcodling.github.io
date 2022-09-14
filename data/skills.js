@@ -42,15 +42,15 @@ const techSkills = [
         link: "",
         tag: LANGUAGE,
     },
-    {
-        name: "Ruby",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original-wordmark.svg",
-        tooltip: `Ruby is an interpreted, high-level, general-purpose programming language which supports 
-            multiple programming paradigms. It was designed with an emphasis on programming productivity and 
-            simplicity.`,
-        link: "",
-        tag: LANGUAGE,
-    },
+    // {
+    //     name: "Ruby",
+    //     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/ruby/ruby-original-wordmark.svg",
+    //     tooltip: `Ruby is an interpreted, high-level, general-purpose programming language which supports 
+    //         multiple programming paradigms. It was designed with an emphasis on programming productivity and 
+    //         simplicity.`,
+    //     link: "",
+    //     tag: LANGUAGE,
+    // },
     {
         name: "MySQL",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original-wordmark.svg",
@@ -94,15 +94,15 @@ const techSkills = [
         link: "",
         tag: FRAMEWORK,
     },
-    {
-        name: "Ruby on Rails",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg",
-        tooltip: `Ruby on Rails is a server-side web application framework written in 
-            Ruby under the MIT License. Rails is a model–view–controller (MVC) framework, providing default 
-            structures for a database, a web service, and web pages.`,
-        link: "",
-        tag: FRAMEWORK,
-    },
+    // {
+    //     name: "Ruby on Rails",
+    //     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/rails/rails-original-wordmark.svg",
+    //     tooltip: `Ruby on Rails is a server-side web application framework written in 
+    //         Ruby under the MIT License. Rails is a model–view–controller (MVC) framework, providing default 
+    //         structures for a database, a web service, and web pages.`,
+    //     link: "",
+    //     tag: FRAMEWORK,
+    // },
     {
         name: "NodeJS",
         icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original-wordmark.svg",
@@ -160,14 +160,14 @@ const techSkills = [
         tag: WORKPLACE,
     },
 
-    {
-        name: "Python",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg",
-        tooltip: `Python is a high-level, general-purpose programming language. Its design philosophy 
-            emphasizes code readability with the use of significant indentation.`,
-        link: "",
-        tag: LANGUAGE,
-    },
+    // {
+    //     name: "Python",
+    //     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original-wordmark.svg",
+    //     tooltip: `Python is a high-level, general-purpose programming language. Its design philosophy 
+    //         emphasizes code readability with the use of significant indentation.`,
+    //     link: "",
+    //     tag: LANGUAGE,
+    // },
     // {
     //     name: "Arduino",
     //     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/arduino/arduino-original-wordmark.svg",
@@ -213,13 +213,13 @@ const techSkills = [
         link: "",
         tag: IMAGE,
     },
-    {
-        name: "Gatsby",
-        icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-plain-wordmark.svg",
-        tooltip: `Gatsby is an open-source static site generator built on top of Node.js using React and GraphQL.`,
-        link: "",
-        tag: FRAMEWORK,
-    },
+    // {
+    //     name: "Gatsby",
+    //     icon: "https://cdn.jsdelivr.net/gh/devicons/devicon/icons/gatsby/gatsby-plain-wordmark.svg",
+    //     tooltip: `Gatsby is an open-source static site generator built on top of Node.js using React and GraphQL.`,
+    //     link: "",
+    //     tag: FRAMEWORK,
+    // },
     ,
     {
         name: "Slack",
